@@ -10,6 +10,12 @@
   	unset($_SESSION['username']);
   	header("location: login.php");
   }
+
+  if (isset($_SESSION['success'])) {
+    unset($_SESSION['success']);
+    header('Refresh: 3;url=dashboard.html');
+  }
+
 ?>
 <!DOCTYPE html>
 <html>

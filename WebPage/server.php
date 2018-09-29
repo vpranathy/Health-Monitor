@@ -2,6 +2,7 @@
 session_start();
 
 // initializing variables
+
 $username = "";
 $email    = "";
 $errors = array(); 
@@ -16,6 +17,13 @@ if (isset($_POST['reg_user'])) {
   $email = mysqli_real_escape_string($db, $_POST['email']);
   $password_1 = mysqli_real_escape_string($db, $_POST['password_1']);
   $password_2 = mysqli_real_escape_string($db, $_POST['password_2']);
+  $firstname = mysqli_real_escape_string($db, $_POST['firstname']);
+  $lastname = mysqli_real_escape_string($db, $_POST['lastname']);
+  $address = mysqli_real_escape_string($db, $_POST['address']);
+  $city = mysqli_real_escape_string($db, $_POST['city']);
+  $country = mysqli_real_escape_string($db, $_POST['country']);
+  $postalcode = mysqli_real_escape_string($db, $_POST['postalcode']);
+  $aboutme = mysqli_real_escape_string($db, $_POST['aboutme']);
 
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
@@ -78,6 +86,23 @@ if (isset($_POST['login_user'])) {
       array_push($errors, "Wrong username/password combination");
     }
   }
+}
+
+if (isset($_POST['update_profile'])) {
+  $temp=$_SESSION['username'];
+
+  // receive all input values from the form
+  $email = mysqli_real_escape_string($db, $_POST['email']);
+  $firstname = mysqli_real_escape_string($db, $_POST['firstname']);
+  $lastname = mysqli_real_escape_string($db, $_POST['lastname']);
+  $address = mysqli_real_escape_string($db, $_POST['address']);
+  $city = mysqli_real_escape_string($db, $_POST['city']);
+  $country = mysqli_real_escape_string($db, $_POST['country']);
+  $postalcode = mysqli_real_escape_string($db, $_POST['postalcode']);
+  $aboutme = mysqli_real_escape_string($db, $_POST['aboutme']);
+  $query = "UPDATE users SET email='$email', firstname='$firstname', lastname='$lastname', address='$address', city='$city', country='$country', postalcode='$postalcode', aboutme='$aboutme' WHERE username='$temp' "; 
+  $_SESSION['aboutme'] = $aboutme; 
+  mysqli_query($db, $query);
 }
 
 ?>
