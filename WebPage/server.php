@@ -100,7 +100,7 @@ if (isset($_POST['update_profile'])) {
   $country = mysqli_real_escape_string($db, $_POST['country']);
   $postalcode = mysqli_real_escape_string($db, $_POST['postalcode']);
   $aboutme = mysqli_real_escape_string($db, $_POST['aboutme']);
-  $query = "UPDATE users SET email='$email', firstname='$firstname', lastname='$lastname', address='$address', city='$city', country='$country', postalcode='$postalcode', aboutme='$aboutme' WHERE username='$temp' "; 
+  $query = "UPDATE users SET email='$email',firstname='$firstname', lastname='$lastname', address='$address', city='$city', country='$country', postalcode='$postalcode', aboutme='$aboutme' WHERE username='$temp' "; 
   $_SESSION['aboutme'] = $aboutme; 
   mysqli_query($db, $query);
 }
