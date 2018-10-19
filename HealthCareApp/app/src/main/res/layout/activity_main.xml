@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/logo"
+        app:srcCompat="@drawable/healthapplogo"
+        tools:srcCompat="@drawable/healthapplogo" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        android:autofillHints=""
+        android:drawableStart="@drawable/ic_action_user" tools:targetApi="o"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_marginTop="30dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        android:autofillHints=""
+        android:drawableStart="@drawable/ic_action_pass" tools:targetApi="o"/>
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="173dp"
+        android:text="Login"
+        tools:text="Login"
+        android:background="@color/colorAccent"
+        android:backgroundTintMode="screen"/>
+
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="102dp"
+        android:text="Register Here"
+        tools:text="Register Here"
+        android:screenReaderFocusable="true"
+        android:textColor="@color/colorPrimaryDark"/>
+</RelativeLayout>
