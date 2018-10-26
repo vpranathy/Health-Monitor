@@ -77,15 +77,15 @@
             </a>
         </li>
         <li>
-            <a href="maps.html">
+            <a href="maps.php">
                 <i class="ti-map"></i>
                 <p>Maps</p>
             </a>
         </li>
         <li>
-            <a href="notifications.html">
+            <a href="http://healthmonitoringhomepage-env.5ndteffiz2.us-east-2.elasticbeanstalk.com/">
                 <i class="ti-bell"></i>
-                <p>Notifications</p>
+                <p>Home Page</p>
             </a>
         </li>
     </ul>

@@ -1,5 +1,5 @@
 <?php
-$connect = mysqli_connect('fall2018softenggroup2health.cmbbmvtvxryw.us-east-1.rds.amazonaws.com', 'yuyangchen0122', 'a123123q45', 'HealthMonitoring');
+$connect = mysqli_connect('softenggroup2.czmkb4udcq6o.us-east-2.rds.amazonaws.com', 'yuyangchen0122', 'a123123q45', 'HealthMonitoring');
 $query = '
 SELECT sensors_temperature_data, 
 UNIX_TIMESTAMP(CONCAT_WS(" ", sensors_data_date, sensors_data_time)) AS datetime 
@@ -143,17 +143,17 @@ $jsonTable = json_encode($table);
 				</a>
 			</li>
 			<li>
-				<a href="maps.html">
+				<a href="maps.php">
 					<i class="ti-map"></i>
 					<p>Maps</p>
 				</a>
 			</li>
 			<li>
-				<a href="notifications.html">
+				<a href="http://healthmonitoringhomepage-env.5ndteffiz2.us-east-2.elasticbeanstalk.com/">
 					<i class="ti-bell"></i>
-					<p>Notifications</p>
-				</a>
-			</li>
+                	<p>Home Page</p>
+            	</a>
+        	</li>
 		</ul>
 	</div>
 </div>

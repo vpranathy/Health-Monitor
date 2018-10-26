@@ -1,4 +1,5 @@
-<?php include('server.php') ?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -30,6 +31,11 @@
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/themify-icons.css" rel="stylesheet">
 
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAEVuPLKyD_ig8PSrzKOZ8Wbcx4Gbe3z4&callback=initMap">
+</script>
+
 </head>
 <body>
 
@@ -55,7 +61,7 @@
                 <p>Dashboard</p>
             </a>
         </li>
-        <li class="active">
+        <li>
             <a href="user.php">
                 <i class="ti-user"></i>
                 <p>User Profile</p>
@@ -73,8 +79,8 @@
                 <p>Typography</p>
             </a>
         </li>
-        <li>
-            <a href="maps.html">
+        <li class="active">
+            <a href="maps.php">
                 <i class="ti-map"></i>
                 <p>Maps</p>
             </a>
@@ -99,7 +105,7 @@
                 <span class="icon-bar bar2"></span>
                 <span class="icon-bar bar3"></span>
             </button>
-            <a class="navbar-brand" href="#">User Profile</a>
+            <a class="navbar-brand" href="#">Maps</a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -136,128 +142,18 @@
 </div>
 </nav>
 
-
 <div class="content">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-4 col-md-5">
-                <div class="card card-user">
-                    <div class="image">
-                        <img src="assets/img/background.jpg" alt="..."/>
-                    </div>
-                    <div class="content">
-                        <div class="author">
-                          <img class="avatar border-white" src="assets/img/faces/face-2.jpg" alt="..."/>
-                          <h4 class="title"><?php echo $_SESSION['username']; ?><br />
-                           <a href="#"><small>@<?php echo $_SESSION['username']; ?></small></a>
-                       </h4>
-                   </div>
-                   <p class="description text-center">
-                    <strong><?php echo $_SESSION['aboutme']; ?></strong>
-                </p>
-            </div>
-            <hr>
+        <div class="card card-map">
+          <div class="header">
+            <h4 class="title">Google Maps</h4>
         </div>
+        <body>
+            <div id="map"></div>
+        </body>
     </div>
-    <div class="col-lg-8 col-md-7">
-        <div class="card">
-            <div class="header">
-                <h4 class="title">Edit Profile</h4>
-            </div>
-            <form action="user.php" method="post"> 
-
-                <div class="content">
-                    <form>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Company</label>
-                                    <input type="text" class="form-control border-input" disabled placeholder="Company" value="Soft Eng Gourp #2">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Username</label>
-                                    <input value='<?php echo $_SESSION['username']; ?>' type="text" name="username" class="form-control border-input" disabled placeholder="Username">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Email address</label>
-                                    <input type="text" name="email" class="form-control border-input" value="<?php 
-                                    echo $email; ?>">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>First Name</label>
-                                    <input type="text" name="firstname" class="form-control border-input" value="<?php 
-                                    echo $firstname; ?>">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Last Name</label>
-                                    <input type="text" name="lastname" class="form-control border-input" value="<?php echo $lastname; ?>">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label>Address</label>
-                                    <input type="text" name="address" class="form-control border-input" value="<?php echo $address; ?>">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>City</label>
-                                    <input type="text" name="city" class="form-control border-input" value="<?php echo $city; ?>">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Country</label>
-                                    <input type="text" name="country" class="form-control border-input" value="<?php echo $country; ?>">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label>Postal Code</label>
-                                    <input type="text" name="postalcode" class="form-control border-input" value="<?php echo $postalcode; ?>">                                            
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label>About me</label>
-                                    <input type="text" name="aboutme" class="form-control border-input" value="<?php echo $aboutme; ?>">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="input-group">
-                            <button type="submit" class="btn" name="update_profile">Update Profile</button>
-                        </div>
-                        <div class="clearfix"></div>
-                    </form>
-                </form>
-            </div>
-        </div>
-    </div>
-
-
 </div>
 </div>
-</div>
-
 
 <footer class="footer">
     <div class="container-fluid">
@@ -309,10 +205,21 @@
 <!--  Google Maps Plugin    -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAEVuPLKyD_ig8PSrzKOZ8Wbcx4Gbe3z4
+&callback=initMap">
+</script>
+
 <!-- Paper Dashboard Core javascript and methods for Demo purpose -->
 <script src="assets/js/paper-dashboard.js"></script>
 
 <!-- Paper Dashboard DEMO methods, don't include it in your project! -->
 <script src="assets/js/demo.js"></script>
+
+<script>
+    $().ready(function(){
+        demo.initGoogleMaps();
+    });
+</script>
 
 </html>
