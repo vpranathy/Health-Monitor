@@ -21,12 +21,9 @@
         android:id="@+id/button2"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_alignTop="@+id/button1"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="38dp"
-        android:layout_marginLeft="38dp"
-        android:layout_marginTop="0dp"
+        android:layout_above="@+id/button3"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_marginBottom="17dp"
         android:drawableTop="@drawable/ic_action_study"
         android:text="@string/study" />
 
@@ -54,7 +51,8 @@
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="italic"
-        app:fontFamily="casual" />
+        android:fontFamily="casual"
+         />
 
     <TextView
         android:id="@+id/textView7"
@@ -103,7 +101,7 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button"
+        android:layout_alignEnd="@+id/button3"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginEnd="-47dp"
