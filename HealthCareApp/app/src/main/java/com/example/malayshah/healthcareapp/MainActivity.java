@@ -44,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
         buttonA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             Username = username.getText().toString();
+                openhomeScreen();
+            /* Username = username.getText().toString();
              Password = password.getText().toString();
              if (Username.equals("")||Password.equals("")){
                     builder.setTitle("Something went wrong");
@@ -87,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                  };
 
                  MySingleton.getmInstance(MainActivity.this).addToRequestQueue(stringRequest);
-             }
+             }*/
             }
         });
 
