@@ -1,13 +1,13 @@
 <?php
 
-require "mobile_connect.php"
+require "mobile_connect.php";
 
-$password =$_POST["password"]
-$user_name = $_POST["user_name"]
+$password =$_POST["password"];
+$user_name = $_POST["user_name"];
 
 $sql = " select firstname, email from users where username like '".$user_name."',and password like '".$password."';";
 
-$result = mysqli_query($con,$sql)
+$result = mysqli_query($con,$sql);
 $response = array();
 if (mysqli_num_rows($result)>0) {
 	$row = mysqli_fetch_row($result);
@@ -26,6 +26,6 @@ else
 
 }
 
-mysqli_close($con)
+mysqli_close($con);
 
 ?>
