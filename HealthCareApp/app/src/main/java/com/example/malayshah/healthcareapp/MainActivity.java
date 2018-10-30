@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
              Username = username.getText().toString();
              Password = password.getText().toString();
+                Log.d(TAG, "onClick: name "+Username);
+                Log.d(TAG, "onClick: password "+Password);
              if (Username.equals("")||Password.equals("")){
                     builder.setTitle("Something went wrong");
                     DisplatAlert("Enter a valid username and password...");
