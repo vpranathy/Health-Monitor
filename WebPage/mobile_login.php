@@ -20,7 +20,7 @@ if (mysqli_num_rows($result)>0) {
 else
 {
 		$code=" login failed";
-		$message = ' User not found. Try again'
+		$message = ' User not found. Try again';
 		array_push($response,array("code"=>$code, "message"=>$message));
 		echo json_encode($response);
 
