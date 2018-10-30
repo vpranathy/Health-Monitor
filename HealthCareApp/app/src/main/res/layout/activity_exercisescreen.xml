@@ -5,78 +5,84 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".exercisescreen">
+    tools:context=".exercisescreen"
+    >
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+    <LinearLayout
+        android:id="@+id/innerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
-        android:drawableTop="@drawable/ic_action_gym"
-        android:text="@string/exercise" />
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_above="@+id/button3"
-        android:layout_alignStart="@+id/textView10"
-        android:layout_marginBottom="17dp"
-        android:drawableTop="@drawable/ic_action_study"
-        android:text="@string/study" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:drawableTop="@drawable/ic_action_gym"
+            android:padding="15dp"
+            android:text="@string/exercise" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignTop="@+id/button1"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="38dp"
-        android:layout_marginRight="38dp"
-        android:drawableTop="@drawable/ic_action_sleep"
-        android:text="@string/sleep" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:drawableTop="@drawable/ic_action_study"
+            android:padding="15dp"
+            android:text="@string/study" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/innerLayout"
+            android:layout_alignEnd="@+id/innerLayout"
+            android:drawableTop="@drawable/ic_action_sleep"
+            android:padding="15dp"
+            android:text="@string/sleep" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="233dp"
-        android:layout_height="47dp"
-        android:layout_alignEnd="@+id/button2"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="-132dp"
-        android:layout_marginBottom="242dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/innerLayout"
+        android:layout_alignStart="@+id/button4"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="-13dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="casual"
         android:text="@string/live_heart_rate_135_bpm"
         android:textColor="@color/colorPrimary"
-        android:textSize="18sp"
-        android:textStyle="italic"
-        android:fontFamily="casual"
-         />
+        android:textSize="20sp"
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button2"
+
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="140dp"
         android:text="@string/_132"
-        android:textSize="30sp" />
+        android:textSize="28sp" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="-20dp"
-        android:layout_marginRight="0dp"
         android:layout_marginBottom="140dp"
         android:text="@string/_145"
-        android:textSize="30sp" />
+        android:textSize="28sp" />
 
     <TextView
         android:id="@+id/textView10"
@@ -85,7 +91,7 @@
         android:layout_alignBottom="@+id/textView7"
         android:layout_centerHorizontal="true"
         android:text="@string/minimum_maximum"
-        android:textSize="30sp" />
+        android:textSize="27sp" />
 
     <TextView
         android:id="@+id/textView11"
@@ -95,16 +101,16 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-140dp"
         android:text="@string/heart_rate"
-        android:textSize="30sp" />
+        android:textSize="28sp" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button3"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginEnd="-47dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/music_player"
         android:textSize="25sp" />
 

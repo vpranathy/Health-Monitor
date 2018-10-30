@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="175dp"
+        android:layout_marginTop="145dp"
         android:text="CONNECT TO DEVICE"
         android:textSize="20sp" />
 
@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="291dp"
+        android:layout_marginBottom="261dp"
         android:text="SETTINGS" />
 
 </RelativeLayout>
