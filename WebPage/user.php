@@ -184,7 +184,8 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Email address</label>
-                                    <input type="text" name="email" class="form-control border-input" value="<?php 
+                                    <input type="text" name="email" class="form-control border-input" value="
+                                    <?php 
                                     echo $email; ?>">
                                 </div>
                             </div>

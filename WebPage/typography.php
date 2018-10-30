@@ -6,11 +6,75 @@ UNIX_TIMESTAMP(CONCAT_WS(" ", sensors_data_date, sensors_data_time)) AS datetime
 FROM tbl_sensors_data 
 ORDER BY sensors_data_date DESC, sensors_data_time DESC
 ';
+
+$query1 = 'SELECT sensors_temperature_data, 
+UNIX_TIMESTAMP(CONCAT_WS(" ", sensors_data_date, sensors_data_time)) AS datetime 
+FROM tbl_sensors_data1 
+ORDER BY sensors_data_date DESC, sensors_data_time DESC
+';
+
+$query2 = 'SELECT sensors_temperature_data, 
+UNIX_TIMESTAMP(CONCAT_WS(" ", sensors_data_date, sensors_data_time)) AS datetime 
+FROM tbl_sensors_data2 
+ORDER BY sensors_data_date DESC, sensors_data_time DESC
+';
+
+$query3 = 'SELECT sensors_temperature_data, 
+UNIX_TIMESTAMP(CONCAT_WS(" ", sensors_data_date, sensors_data_time)) AS datetime 
+FROM tbl_sensors_data3 
+ORDER BY sensors_data_date DESC, sensors_data_time DESC
+';
+
 $result = mysqli_query($connect, $query);
 $rows = array();
 $table = array();
 
 $table['cols'] = array(
+	array(
+		'label' => 'Date Time', 
+		'type' => 'datetime'
+	),
+	array(
+		'label' => 'Temperature (°C)', 
+		'type' => 'number'
+	)
+);
+
+$result1 = mysqli_query($connect, $query1);
+$rows1 = array();
+$table1 = array();
+
+$table1['cols'] = array(
+	array(
+		'label' => 'Date Time', 
+		'type' => 'datetime'
+	),
+	array(
+		'label' => 'Temperature (°C)', 
+		'type' => 'number'
+	)
+);
+
+$result2 = mysqli_query($connect, $query2);
+$rows2 = array();
+$table2 = array();
+
+$table2['cols'] = array(
+	array(
+		'label' => 'Date Time', 
+		'type' => 'datetime'
+	),
+	array(
+		'label' => 'Temperature (°C)', 
+		'type' => 'number'
+	)
+);
+
+$result3 = mysqli_query($connect, $query3);
+$rows3 = array();
+$table3 = array();
+
+$table3['cols'] = array(
 	array(
 		'label' => 'Date Time', 
 		'type' => 'datetime'
@@ -37,6 +101,57 @@ while($row = mysqli_fetch_array($result))
 }
 $table['rows'] = $rows;
 $jsonTable = json_encode($table);
+
+while($row = mysqli_fetch_array($result1))
+{
+	$sub_array = array();
+	$datetime = explode(".", $row["datetime"]);
+	$sub_array[] =  array(
+		"v" => 'Date(' . $datetime[0] . '000)'
+	);
+	$sub_array[] =  array(
+		"v" => $row["sensors_temperature_data"]
+	);
+	$rows1[] =  array(
+		"c" => $sub_array
+	);
+}
+$table1['rows'] = $rows1;
+$jsonTable = json_encode($table1);
+
+while($row = mysqli_fetch_array($result2))
+{
+	$sub_array = array();
+	$datetime = explode(".", $row["datetime"]);
+	$sub_array[] =  array(
+		"v" => 'Date(' . $datetime[0] . '000)'
+	);
+	$sub_array[] =  array(
+		"v" => $row["sensors_temperature_data"]
+	);
+	$rows2[] =  array(
+		"c" => $sub_array
+	);
+}
+$table2['rows'] = $rows2;
+$jsonTable = json_encode($table2);
+
+while($row = mysqli_fetch_array($result3))
+{
+	$sub_array = array();
+	$datetime = explode(".", $row["datetime"]);
+	$sub_array[] =  array(
+		"v" => 'Date(' . $datetime[0] . '000)'
+	);
+	$sub_array[] =  array(
+		"v" => $row["sensors_temperature_data"]
+	);
+	$rows3[] =  array(
+		"c" => $sub_array
+	);
+}
+$table3['rows'] = $rows3;
+$jsonTable = json_encode($table3);
 
 ?>
 
@@ -80,13 +195,67 @@ $jsonTable = json_encode($table);
 		{
 			var data = new google.visualization.DataTable(<?php echo $jsonTable; ?>);
 			var options = {
-				title:'Sensors Data',
+				title:'Heartbeat Data',
 				legend:{position:'bottom'},
 				chartArea:{width:'95%', height:'65%'
 			}
 		};
 
 		var chart = new google.visualization.LineChart(document.getElementById('line_chart'));
+
+		chart.draw(data, options);
+	}
+</script>
+<script type="text/javascript">
+		google.charts.load('current', {'packages':['corechart']});
+		google.charts.setOnLoadCallback(drawChart);
+		function drawChart()
+		{
+			var data = new google.visualization.DataTable(<?php echo $jsonTable; ?>);
+			var options = {
+				title:'Heartbeat Data',
+				legend:{position:'bottom'},
+				chartArea:{width:'95%', height:'65%'
+			}
+		};
+
+		var chart = new google.visualization.LineChart(document.getElementById('line_chart1'));
+
+		chart.draw(data, options);
+	}
+</script>
+<script type="text/javascript">
+		google.charts.load('current', {'packages':['corechart']});
+		google.charts.setOnLoadCallback(drawChart);
+		function drawChart()
+		{
+			var data = new google.visualization.DataTable(<?php echo $jsonTable; ?>);
+			var options = {
+				title:'Heartbeat Data',
+				legend:{position:'bottom'},
+				chartArea:{width:'95%', height:'65%'
+			}
+		};
+
+		var chart = new google.visualization.LineChart(document.getElementById('line_chart2'));
+
+		chart.draw(data, options);
+	}
+</script>
+<script type="text/javascript">
+		google.charts.load('current', {'packages':['corechart']});
+		google.charts.setOnLoadCallback(drawChart);
+		function drawChart()
+		{
+			var data = new google.visualization.DataTable(<?php echo $jsonTable; ?>);
+			var options = {
+				title:'Heartbeat Data',
+				legend:{position:'bottom'},
+				chartArea:{width:'95%', height:'65%'
+			}
+		};
+
+		var chart = new google.visualization.LineChart(document.getElementById('line_chart3'));
 
 		chart.draw(data, options);
 	}
@@ -212,15 +381,43 @@ $jsonTable = json_encode($table);
 				<div class="col-md-12">
 					<div class="card">
 						<div class="header">
-							<h4 class="title">Paper Dashboard Headings</h4>
-							<p class="category">Created using <a href="https://www.google.com/fonts/specimen/Muli">Muli</a> Font Family</p>
+							<h4 class="title">Welcome<br>
+								This section provides you with your heart rate charts
+							</h4>
 						</div>
 						<div class="content">
 							<body>
 								<div class="page-wrapper">
 									<br />
 									<h2 align="center">Heart Rate Garph</h2>
-									<div id="line_chart" style="width: 100%; height: 500px"></div>
+									<div id="line_chart" style="width: 93%; height: 500px"></div>
+								</div>
+							</body>
+						</div>
+						<div class="content">
+							<body>
+								<div class="page-wrapper">
+									<br />
+									<h2 align="center">Heart Rate Garph & Workout</h2>
+									<div id="line_chart1" style="width: 93%; height: 500px"></div>
+								</div>
+							</body>
+						</div>
+						<div class="content">
+							<body>
+								<div class="page-wrapper">
+									<br />
+									<h2 align="center">Heart Rate Garph & Sleeping</h2>
+									<div id="line_chart2" style="width: 93%; height: 500px"></div>
+								</div>
+							</body>
+						</div>
+						<div class="content">
+							<body>
+								<div class="page-wrapper">
+									<br />
+									<h2 align="center">Heart Rate Garph & Studying</h2>
+									<div id="line_chart3" style="width: 93%; height: 500px"></div>
 								</div>
 							</body>
 						</div>
