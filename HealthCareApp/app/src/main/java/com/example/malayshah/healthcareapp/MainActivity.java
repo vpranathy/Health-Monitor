@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                      @Override
                      public void onResponse(String response) {
                          try {
-                             JSONArray jsonArray = new JSONArray(response);
+                             JSONArray jsonArray = new JSONArray();
                              JSONObject jsonObject = jsonArray.getJSONObject(0);
                              String code = jsonObject.getString("code");
                              if (code.equals(" login failed")){
@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
                          } catch (JSONException e) {
                              e.printStackTrace();
                          }
+
                      }
                  }, new Response.ErrorListener() {
                      @Override
@@ -89,6 +90,8 @@ public class MainActivity extends AppCompatActivity {
              }
             }
         });
+
+
 
         Button buttonB = findViewById(R.id.buttonB);
         buttonB.setOnClickListener(new View.OnClickListener() {
