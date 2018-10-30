@@ -6,11 +6,5 @@ $db_password="a123123q45";
 $db_name = "HealthMonitoring";
 
 $con = mysqli_connect($host, $db_user, $db_password, $db_name);
-if ($con) {
-	echo "success";
-
-}else{
-	echo "failure";
-}
 
 ?>
