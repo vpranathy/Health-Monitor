@@ -34,17 +34,16 @@
             android:layout_weight="33.33"            android:layout_height="100dp"
             android:drawableTop="@drawable/ic_action_study"
             android:padding="15dp"
-            android:text="@string/study" />
+            android:text="@string/sleep" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="0dp"
-            android:layout_weight="33.33"            android:layout_height="100dp"
-            android:layout_alignTop="@+id/innerLayout"
-            android:layout_alignEnd="@+id/innerLayout"
+            android:layout_weight="33.33"
+            android:layout_height="100dp"
             android:drawableTop="@drawable/ic_action_sleep"
             android:padding="15dp"
-            android:text="@string/sleep" />
+            android:text="@string/study" />
     </LinearLayout>
 
     <TextView
