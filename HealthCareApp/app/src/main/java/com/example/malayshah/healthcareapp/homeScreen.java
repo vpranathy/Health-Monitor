@@ -5,18 +5,30 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import java.util.Random;
 
 public class homeScreen extends AppCompatActivity {
 
     private Button buttonC;
     private Button button5;
+    TextView textView4 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
-
+        textView4 = findViewById(R.id.textView4);
         buttonC = (Button) findViewById(R.id.buttonC);
+        button5= findViewById(R.id.button5);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               opensettings();
+            }
+        });
+
         buttonC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -24,14 +36,21 @@ public class homeScreen extends AppCompatActivity {
             }
         });
 
-        button5 = (Button) findViewById(R.id.button5);
-        button5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                opensettings();
-            }
-        });
+//        button5 = (Button) findViewById(R.id.button5);
+//        button5.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                opensettings();
+//            }
+//        });
+//
+    }
 
+    public int generateRandomValues(){
+        Random rand= new Random();
+        int max = 70;
+        int min =60;
+        return (min + rand.nextInt((max-min)+1));
     }
 
     public void openexerciseScreen(){

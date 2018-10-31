@@ -28,6 +28,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="227dp"
+        android:textSize="15dp"
         android:text="Information about previous sessions below:"
         android:textStyle="bold|italic" />
 

@@ -10,18 +10,20 @@
 
     <LinearLayout
         android:id="@+id/innerLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginTop="80dp"
+        android:weightSum="100"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/button1"
-            android:layout_width="100dp"
+            android:layout_width="0dp"
+            android:layout_weight="33.33"
             android:layout_height="100dp"
             android:drawableTop="@drawable/ic_action_gym"
             android:padding="15dp"
@@ -29,16 +31,16 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:layout_weight="33.33"            android:layout_height="100dp"
             android:drawableTop="@drawable/ic_action_study"
             android:padding="15dp"
             android:text="@string/study" />
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:layout_weight="33.33"            android:layout_height="100dp"
             android:layout_alignTop="@+id/innerLayout"
             android:layout_alignEnd="@+id/innerLayout"
             android:drawableTop="@drawable/ic_action_sleep"
@@ -51,17 +53,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/innerLayout"
-        android:layout_alignStart="@+id/button4"
         android:layout_centerInParent="true"
-        android:layout_marginStart="-13dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="38dp"
-        android:layout_marginEnd="20dp"
         android:fontFamily="casual"
-        android:text="@string/live_heart_rate_135_bpm"
+        android:text="Live Heartrate is : "
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
         android:textStyle="italic" />
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/liveData"
+        android:fontFamily="casual"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView6"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text=" 65"
+        />
     <TextView
         android:id="@+id/textView7"
         android:layout_width="70dp"
