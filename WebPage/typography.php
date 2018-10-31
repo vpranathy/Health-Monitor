@@ -1,28 +1,31 @@
 <?php
 $connect = mysqli_connect('softenggroup2.czmkb4udcq6o.us-east-2.rds.amazonaws.com', 'yuyangchen0122', 'a123123q45', 'HealthMonitoring');
 $query = '
-SELECT sensors_temperature_data, 
-UNIX_TIMESTAMP(CONCAT_WS(" ", sensors_data_date, sensors_data_time)) AS datetime 
-FROM tbl_sensors_data 
-ORDER BY sensors_data_date DESC, sensors_data_time DESC
+SELECT HeartRate,
+UNIX_TIMESTAMP(CONCAT_WS(Date, Time)) AS datetime , Music
+FROM HeartData 
+ORDER BY Date DESC, Time DESC
 ';
 
-$query1 = 'SELECT sensors_temperature_data, 
-UNIX_TIMESTAMP(CONCAT_WS(" ", sensors_data_date, sensors_data_time)) AS datetime 
-FROM tbl_sensors_data1 
-ORDER BY sensors_data_date DESC, sensors_data_time DESC
+$query1 = '
+SELECT HeartRate,
+UNIX_TIMESTAMP(CONCAT_WS(" ", Date, Time)) AS datetime , Music
+FROM HeartData 
+ORDER BY Date DESC, Time DESC
 ';
 
-$query2 = 'SELECT sensors_temperature_data, 
-UNIX_TIMESTAMP(CONCAT_WS(" ", sensors_data_date, sensors_data_time)) AS datetime 
-FROM tbl_sensors_data2 
-ORDER BY sensors_data_date DESC, sensors_data_time DESC
+$query2 = '
+SELECT HeartRate,
+UNIX_TIMESTAMP(CONCAT_WS(" ", Date, Time)) AS datetime , Music
+FROM HeartData 
+ORDER BY Date DESC, Time DESC
 ';
 
-$query3 = 'SELECT sensors_temperature_data, 
-UNIX_TIMESTAMP(CONCAT_WS(" ", sensors_data_date, sensors_data_time)) AS datetime 
-FROM tbl_sensors_data3 
-ORDER BY sensors_data_date DESC, sensors_data_time DESC
+$query3 = '
+SELECT HeartRate,
+UNIX_TIMESTAMP(CONCAT_WS(" ", Date, Time)) AS datetime , Music
+FROM HeartData 
+ORDER BY Date DESC, Time DESC
 ';
 
 $result = mysqli_query($connect, $query);
@@ -35,7 +38,7 @@ $table['cols'] = array(
 		'type' => 'datetime'
 	),
 	array(
-		'label' => 'Temperature (°C)', 
+		'label' => 'Heart Rate', 
 		'type' => 'number'
 	)
 );
@@ -50,7 +53,7 @@ $table1['cols'] = array(
 		'type' => 'datetime'
 	),
 	array(
-		'label' => 'Temperature (°C)', 
+		'label' => 'Heart Rate', 
 		'type' => 'number'
 	)
 );
@@ -65,7 +68,7 @@ $table2['cols'] = array(
 		'type' => 'datetime'
 	),
 	array(
-		'label' => 'Temperature (°C)', 
+		'label' => 'Heart Rate', 
 		'type' => 'number'
 	)
 );
@@ -80,7 +83,7 @@ $table3['cols'] = array(
 		'type' => 'datetime'
 	),
 	array(
-		'label' => 'Temperature (°C)', 
+		'label' => 'Heart Rate', 
 		'type' => 'number'
 	)
 );
@@ -93,7 +96,7 @@ while($row = mysqli_fetch_array($result))
 		"v" => 'Date(' . $datetime[0] . '000)'
 	);
 	$sub_array[] =  array(
-		"v" => $row["sensors_temperature_data"]
+		"v" => $row["HeartRate"]
 	);
 	$rows[] =  array(
 		"c" => $sub_array
@@ -110,7 +113,7 @@ while($row = mysqli_fetch_array($result1))
 		"v" => 'Date(' . $datetime[0] . '000)'
 	);
 	$sub_array[] =  array(
-		"v" => $row["sensors_temperature_data"]
+		"v" => $row["HeartRate"]
 	);
 	$rows1[] =  array(
 		"c" => $sub_array
@@ -127,7 +130,7 @@ while($row = mysqli_fetch_array($result2))
 		"v" => 'Date(' . $datetime[0] . '000)'
 	);
 	$sub_array[] =  array(
-		"v" => $row["sensors_temperature_data"]
+		"v" => $row["HeartRate"]
 	);
 	$rows2[] =  array(
 		"c" => $sub_array
@@ -144,7 +147,7 @@ while($row = mysqli_fetch_array($result3))
 		"v" => 'Date(' . $datetime[0] . '000)'
 	);
 	$sub_array[] =  array(
-		"v" => $row["sensors_temperature_data"]
+		"v" => $row["HeartRate"]
 	);
 	$rows3[] =  array(
 		"c" => $sub_array
@@ -194,6 +197,7 @@ $jsonTable = json_encode($table3);
 		function drawChart()
 		{
 			var data = new google.visualization.DataTable(<?php echo $jsonTable; ?>);
+
 			var options = {
 				title:'Heartbeat Data',
 				legend:{position:'bottom'},
@@ -389,7 +393,7 @@ $jsonTable = json_encode($table3);
 							<body>
 								<div class="page-wrapper">
 									<br />
-									<h2 align="center">Heart Rate Garph</h2>
+									<h2 align="center">Heart Rate Graph & Do nothing</h2>
 									<div id="line_chart" style="width: 93%; height: 500px"></div>
 								</div>
 							</body>
@@ -398,7 +402,7 @@ $jsonTable = json_encode($table3);
 							<body>
 								<div class="page-wrapper">
 									<br />
-									<h2 align="center">Heart Rate Garph & Workout</h2>
+									<h2 align="center">Heart Rate Graph & Workout</h2>
 									<div id="line_chart1" style="width: 93%; height: 500px"></div>
 								</div>
 							</body>
@@ -407,7 +411,7 @@ $jsonTable = json_encode($table3);
 							<body>
 								<div class="page-wrapper">
 									<br />
-									<h2 align="center">Heart Rate Garph & Sleeping</h2>
+									<h2 align="center">Heart Rate Graph & Sleeping</h2>
 									<div id="line_chart2" style="width: 93%; height: 500px"></div>
 								</div>
 							</body>
@@ -416,7 +420,7 @@ $jsonTable = json_encode($table3);
 							<body>
 								<div class="page-wrapper">
 									<br />
-									<h2 align="center">Heart Rate Garph & Studying</h2>
+									<h2 align="center">Heart Rate Graph & Studying</h2>
 									<div id="line_chart3" style="width: 93%; height: 500px"></div>
 								</div>
 							</body>

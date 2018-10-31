@@ -31,10 +31,21 @@
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/themify-icons.css" rel="stylesheet">
 
-
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAEVuPLKyD_ig8PSrzKOZ8Wbcx4Gbe3z4&callback=initMap">
-</script>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
 
 </head>
 <body>
@@ -149,7 +160,18 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAEVuPLKyD_ig8PSrzKOZ8Wbc
             <h4 class="title">Google Maps</h4>
         </div>
         <body>
-            <div id="map"></div>
+            <div id="googleMap"></div>
+            <script>
+            function myMap() {
+            var mapProp= {
+                center:new google.maps.LatLng(51.508742,-0.120850),
+                zoom:5,
+            };
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            }
+            </script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAEVuPLKyD_ig8PSrzKOZ8Wbcx4Gbe3z4&callback=myMap"></script>
         </body>
     </div>
 </div>
