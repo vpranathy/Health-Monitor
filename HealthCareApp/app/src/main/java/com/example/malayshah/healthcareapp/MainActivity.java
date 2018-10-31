@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onResponse(String response) {
                             try {
-                                JSONArray jsonArray = new JSONArray();
+                                JSONArray jsonArray = new JSONArray(response);
                                 JSONObject jsonObject = jsonArray.getJSONObject(0);
                                 String code = jsonObject.getString("code");
                                 if (code.equals(" login failed")) {
