@@ -1,10 +1,10 @@
 <?php
 $connect = mysqli_connect('softenggroup2.czmkb4udcq6o.us-east-2.rds.amazonaws.com', 'yuyangchen0122', 'a123123q45', 'HealthMonitoring');
+$temp=$_SESSION['username'];
 $query = '
 SELECT HeartRate,
 UNIX_TIMESTAMP(CONCAT_WS(Date, Time)) AS datetime , Music
-FROM HeartData 
-ORDER BY Date DESC, Time DESC
+FROM HeartData  ORDER BY Date DESC, Time DESC
 ';
 
 $query1 = '
@@ -17,14 +17,14 @@ ORDER BY Date DESC, Time DESC
 $query2 = '
 SELECT HeartRate,
 UNIX_TIMESTAMP(CONCAT_WS(" ", Date, Time)) AS datetime , Music
-FROM HeartData 
+FROM HeartData
 ORDER BY Date DESC, Time DESC
 ';
 
 $query3 = '
 SELECT HeartRate,
 UNIX_TIMESTAMP(CONCAT_WS(" ", Date, Time)) AS datetime , Music
-FROM HeartData 
+FROM HeartData
 ORDER BY Date DESC, Time DESC
 ';
 
