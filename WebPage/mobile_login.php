@@ -4,8 +4,9 @@ require "mobile_connect.php";
 
 $password =$_POST["password"];
 $user_name = $_POST["user_name"];
+$encryptedPassword = md5($password);
 
-$sql = " select firstname, email from users where username like '".$user_name."'and password like '".$password."';";
+$sql = " select firstname, email from users where username like '".$user_name."'and password like '".$encryptedPassword."';";
 
 $result = mysqli_query($con,$sql);
 $response = array();

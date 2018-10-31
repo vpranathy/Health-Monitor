@@ -11,10 +11,22 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -34,30 +46,31 @@ public class exercisescreen extends AppCompatActivity {
     String randData ;
     MediaPlayer player;
     TextView liveData , textView7, textView8;
+    String upload_url = "http://healthmonitoringsystem.us-east-2.elasticbeanstalk.com/mobile_heartrate.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercisescreen);
 
-        workout.add("workout1");
-        workout.add("workout2");
-        workout.add("workout3");
-        workout.add("workout4");
-        workout.add("workout5");
-
-
-        sleep.add("sleep1");
-        sleep.add("sleep2");
-        sleep.add("sleep3");
-        sleep.add("sleep4");
-        sleep.add("sleep5");
-
-
-        study.add("study1");
-        study.add("study2");
-        study.add("study3");
-        study.add("study4");
-        study.add("study5");
+//        workout.add("workout1");
+//        workout.add("workout2");
+//        workout.add("workout3");
+//        workout.add("workout4");
+//        workout.add("workout5");
+//
+//
+//        sleep.add("sleep1");
+//        sleep.add("sleep2");
+//        sleep.add("sleep3");
+//        sleep.add("sleep4");
+//        sleep.add("sleep5");
+//
+//
+//        study.add("study1");
+//        study.add("study2");
+//        study.add("study3");
+//        study.add("study4");
+//        study.add("study5");
 
 
 
@@ -88,10 +101,44 @@ public class exercisescreen extends AppCompatActivity {
                                     Date c = Calendar.getInstance().getTime();
                                     SimpleDateFormat time = new SimpleDateFormat("hh:mm:ss");
                                     SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy");
-                                    String formattedDate = df.format(c);
-                                    String formattedTime = time.format(c);
+                                    final String formattedDate = df.format(c);
+                                    final String formattedTime = time.format(c);
                                     Log.d(TAG, "run: date =>" + formattedDate);
                                     Log.d(TAG, "run: time =>"+formattedTime);
+                                    StringRequest stringRequest = new StringRequest(Request.Method.POST, upload_url, new Response.Listener<String>() {
+                                        @Override
+                                        public void onResponse(String response) {
+                                            try {
+                                                JSONArray jsonArray = new JSONArray(response);
+                                                JSONObject jsonObject = jsonArray.getJSONObject(0);
+                                                String code = jsonObject.getString("code");
+                                                Log.d(TAG, "onResponse: after sending"+code);
+                                            } catch (JSONException e) {
+                                                e.printStackTrace();
+                                            }
+                                        }
+                                    }, new Response.ErrorListener() {
+                                        @Override
+                                        public void onErrorResponse(VolleyError error) {
+
+                                        }
+                                    }){
+                                        @Override
+                                        protected Map<String, String> getParams() throws AuthFailureError {
+                                            Map<String,String> params = new HashMap<String, String>();
+                                            params.put("username","Aniket194");
+                                            params.put("heartrate",randData);
+                                            params.put("date",formattedDate);
+                                            params.put("time",formattedTime);
+                                            params.put("music","RossiniWilliam");
+                                            return params;
+                                        }
+                                    };
+                                    MySingleton.getmInstance(exercisescreen.this).addToRequestQueue(stringRequest);
+
+
+                                }else{
+                                    Log.d(TAG, "run: stopping the loop");
                                 }
                             }
                         }, 0, 2000
