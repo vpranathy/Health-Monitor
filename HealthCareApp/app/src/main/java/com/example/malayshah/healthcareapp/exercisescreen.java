@@ -1,6 +1,7 @@
 package com.example.malayshah.healthcareapp;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
@@ -10,21 +11,28 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class exercisescreen extends AppCompatActivity {
     private static final String TAG = "exercisescreen";
-    private Button button4;
+    private Button exercise;
     private Button button3;
     private Button button2;
+    private Button pause;
+    private Button play;
+    private Button stop;
+    public Boolean runner ;
     ArrayList<String> workout = new ArrayList<>();
     ArrayList<String> sleep = new ArrayList<>();
     ArrayList<String> study = new ArrayList<>();
     String randData ;
-    private Button button1;
+    MediaPlayer player;
     TextView liveData , textView7, textView8;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,19 +60,39 @@ public class exercisescreen extends AppCompatActivity {
         study.add("study5");
 
 
+
+        play=findViewById(R.id.Play);
+        pause = findViewById(R.id.Pause);
+        stop = findViewById(R.id.Stop);
         liveData = findViewById(R.id.liveData);
-        button4 = findViewById(R.id.button1);
+        exercise = findViewById(R.id.button1);
         textView7 = findViewById(R.id.textView7);
         textView8 = findViewById(R.id.textView8);
-        button4.setOnClickListener(new View.OnClickListener() {
+        player=MediaPlayer.create(this,R.raw.exercise1);
+        pause.setVisibility(View.INVISIBLE);
+
+        exercise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                runner = true;
+                pause.setVisibility(View.VISIBLE);
+                play.setVisibility(View.INVISIBLE);
+                player.start();
                 Timer t = new Timer();
                 t.scheduleAtFixedRate(
                         new TimerTask() {
                             public void run() {
-                                randData = Integer.toString(generateRandomValues());
-                                updateLiveData(randData);
+                                if (runner) {
+                                    randData = Integer.toString(generateRandomValues());
+                                    updateLiveData(randData);
+                                    Date c = Calendar.getInstance().getTime();
+                                    SimpleDateFormat time = new SimpleDateFormat("hh:mm:ss");
+                                    SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy");
+                                    String formattedDate = df.format(c);
+                                    String formattedTime = time.format(c);
+                                    Log.d(TAG, "run: date =>" + formattedDate);
+                                    Log.d(TAG, "run: time =>"+formattedTime);
+                                }
                             }
                         }, 0, 2000
                 );
@@ -88,15 +116,39 @@ public class exercisescreen extends AppCompatActivity {
                 openinfoscreenb();
             }
         });
+
+        stop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pause.setVisibility(View.INVISIBLE);
+                play.setVisibility(View.INVISIBLE);
+                player.stop();
+                runner = false;
+            }
+        });
+
+
+
+        pause.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                play.setVisibility(View.VISIBLE);
+                pause.setVisibility(View.INVISIBLE);
+                player.pause();
+            }
+        });
+
+
+        play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                play.setVisibility(View.INVISIBLE);
+                pause.setVisibility(View.VISIBLE);
+                player.start();
+            }
+        });
     }
-       // button1 = (Button) findViewById(R.id.butt);
-//        button1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                openinfoscreen();
-//            }
-//        });
-//    }
+
         public void openmusicplayer() {
             Intent intent3 = new Intent(this, musicplayer.class);
             startActivity(intent3);
