@@ -44,53 +44,55 @@ public class MainActivity extends AppCompatActivity {
         buttonA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openhomeScreen();
-//             Username = username.getText().toString();
-//             Password = password.getText().toString();
-//             if (Username.equals("")||Password.equals("")){
-//                    builder.setTitle("Something went wrong");
-//                    DisplatAlert("Enter a valid username and password...");
-//             }else{
-//                 StringRequest stringRequest = new StringRequest(Request.Method.POST, login_url, new Response.Listener<String>() {
-//                     @Override
-//                     public void onResponse(String response) {
-//                         try {
-//                             JSONArray jsonArray = new JSONArray();
-//                             JSONObject jsonObject = jsonArray.getJSONObject(0);
-//                             String code = jsonObject.getString("code");
-//                             if (code.equals(" login failed")){
-//                                 builder.setTitle("Login error");
-//                                 DisplatAlert(jsonObject.getString("message") );
-//                             }else{
-//                                 openhomeScreen();
-//                             }
-//                         } catch (JSONException e) {
-//                             e.printStackTrace();
-//                         }
-//
-//                     }
-//                 }, new Response.ErrorListener() {
-//                     @Override
-//                     public void onErrorResponse(VolleyError error) {
-//                         Toast.makeText(MainActivity.this,"Error", Toast.LENGTH_SHORT);
-//                         error.printStackTrace();
-//                     }
-//                 })
-//                 {
-//                     @Override
-//                     protected Map<String, String> getParams() throws AuthFailureError {
-//                         Map<String,String> params = new HashMap<>();
-//                         params.put("user_name", Username);
-//                         params.put("password", Password);
-//                         return params;
-//
-//                     }
-//                 };
-//
-//                 MySingleton.getmInstance(MainActivity.this).addToRequestQueue(stringRequest);
-//             }
-            }
-        });
+
+                Username = username.getText().toString();
+                Password = password.getText().toString();
+                if (Username.equals("") || Password.equals("")) {
+                    builder.setTitle("Something went wrong");
+                    DisplatAlert("Enter a valid username and password...");
+                } else {
+                    StringRequest stringRequest = new StringRequest(Request.Method.POST, login_url, new Response.Listener<String>() {
+                        @Override
+                        public void onResponse(String response) {
+                            try {
+                                JSONArray jsonArray = new JSONArray();
+                                JSONObject jsonObject = jsonArray.getJSONObject(0);
+                                String code = jsonObject.getString("code");
+                                if (code.equals(" login failed")) {
+                                    builder.setTitle("Login error");
+                                    DisplatAlert(jsonObject.getString("message"));
+                                } else {
+                                    openhomeScreen();
+                                }
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+
+                        }
+                    }, new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            Toast.makeText(MainActivity.this, "Error", Toast.LENGTH_SHORT);
+                            error.printStackTrace();
+                        }
+                    }) {
+                        @Override
+                        protected Map<String, String> getParams() throws AuthFailureError {
+                            Map<String, String> params = new HashMap<>();
+                            Log.d(TAG, "getParams: "+Username+"'      "+Password);
+                            params.put("user_name", Username);
+                            params.put("password", Password);
+                            return params;
+
+                        }
+                    };
+
+                    MySingleton.getmInstance(MainActivity.this).addToRequestQueue(stringRequest);
+                }
+            }});
+
+
+
 
 
 

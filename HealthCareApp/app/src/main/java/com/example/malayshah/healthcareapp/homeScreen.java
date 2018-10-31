@@ -25,7 +25,7 @@ public class homeScreen extends AppCompatActivity {
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               opensettings();
+                opensettings();
             }
         });
 
@@ -46,12 +46,7 @@ public class homeScreen extends AppCompatActivity {
 //
     }
 
-    public int generateRandomValues(){
-        Random rand= new Random();
-        int max = 70;
-        int min =60;
-        return (min + rand.nextInt((max-min)+1));
-    }
+
 
     public void openexerciseScreen(){
         Intent intent2 = new Intent(this, exercisescreen.class);
@@ -63,4 +58,3 @@ public class homeScreen extends AppCompatActivity {
         startActivity(intent6);
     }
 }
-
