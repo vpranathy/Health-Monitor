@@ -1,0 +1,4 @@
+#Wed Oct 31 00:23:20 EDT 2018
+base.0=C\:\\Users\\Divyaprakash\\Documents\\Bluetooth\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.0=classes.dex
+renamed.0=classes.dex
