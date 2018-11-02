@@ -19,3 +19,6 @@ GND            ———->      GND
 Connect the phone to the bluetooth module, using inbuilt bluetooth search in the android phone.
 Open the App, search for Paired Devices and connect.
 Turn led On and Off using the given GUI.
+
+
+Reference for the Android App used for testing: https://github.com/Mayoogh/Arduino-Bluetooth-Basic/tree/master/LED%20Controller%20APK
