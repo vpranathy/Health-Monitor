@@ -11,6 +11,8 @@ Mobile Application :
 
 
 Web Application:
+  For this system page, we currently have 3 main pages, one is the user's information page, one is the data table page, and the other one is the Heart Rate Graph page. In order to test the user's information page, I attached the screenshot of the table of user from our AWS RDS database. For testing the data table page, I also attached the screenshot of the table of HeartData from database. Please check these two screenshots, they will be prefectly matched up.
+However, in order to test the graph page, I use the IPython Notebook to plot the graphs which are based on the same date table I used in PHP files, and then I match the graphs in IPython Notebook and the graphs in our system page. They are also been prefectly matched up. I also attached the IPython Notebook file and the screenshot of the result in IPython Notebook.
 
 
 
