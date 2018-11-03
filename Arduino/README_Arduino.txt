@@ -1,0 +1,1 @@
+Use HeartRate-v1 for MAX30102; Use HeartRate-v0 for PulseSensor. 
