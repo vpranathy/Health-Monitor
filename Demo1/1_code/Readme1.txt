@@ -5,7 +5,7 @@ Mobile Application:
 
 
 Web application:
-
+Bascially, just go to the url: http://healthmonitoringhomepage-env.5ndteffiz2.us-east-2.elasticbeanstalk.com/
 
 
 
