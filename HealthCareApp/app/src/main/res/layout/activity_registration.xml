@@ -39,11 +39,62 @@
         android:layout_below="@id/username"
         android:hint="enter the password"/>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/age"
+        android:layout_below="@id/password"
+        android:hint="Enter your age"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/height"
+        android:layout_below="@id/age"
+        android:hint="Enter your height"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/height"
+        android:id="@+id/radioButtons"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Male"
+            android:layout_below="@id/height"
+            android:text="Male"
+            android:textColor="#000"
+            android:shadowColor="#000"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Female"
+            android:layout_below="@id/height"
+            android:layout_toRightOf="@id/Male"
+            android:text="Female"
+            android:textColor="#000"
+            android:layout_marginLeft="15sp"/>
+
+    </LinearLayout>
+
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"
         android:id="@+id/RegisterButton"
-        android:layout_below="@id/password"
+        android:layout_below="@id/radioButtons"
+        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"/>
 </RelativeLayout>
