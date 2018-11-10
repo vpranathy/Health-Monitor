@@ -1,3 +1,10 @@
+<?php
+$db = mysqli_connect('softenggroup2.czmkb4udcq6o.us-east-2.rds.amazonaws.com', 'yuyangchen0122', 'a123123q45', 'HealthMonitoring');
+$temp=$_SESSION['username'];
+$query = "";
+$result = mysqli_query($db, $query);
+
+?>
 <!DOCTYPE html>
 <html>
   <head>
