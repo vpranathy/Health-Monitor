@@ -146,36 +146,7 @@
                         <p class="category">This is your personal health data recording center, and improving your health life index is the unchanging goal of our team </p>
                     </div>
                     <div class="content table-responsive table-full-width">
-                        <table class="table table-striped">
-                            <?php
-                            $temp=$_SESSION['username'];
-                            $db = mysqli_connect('softenggroup2.czmkb4udcq6o.us-east-2.rds.amazonaws.com', 'yuyangchen0122', 'a123123q45', 'HealthMonitoring');
-                                    // sending query
-                            $query=("SELECT username,email,firstname,lastname,address,city,country,postalcode,aboutme FROM users WHERE username='$temp' LIMIT 2");
-                            $result = mysqli_query($db,$query);
-                            if (!$result) {
-                                die("Query to show fields from table failed");
-                            }
-                            $fields_num = mysqli_num_fields($result);
-
-                                    // printing table headers
-                            for($i=0; $i<$fields_num; $i++){
-                                $field = mysqli_fetch_field($result);
-                                echo "<td>{$field->name}</td>";
-                            }
-                            echo "</tr>\n";
-                                    // printing table rows
-                            while($row = mysqli_fetch_row($result)){
-                                echo "<tr>";
-                                        // $row is array... foreach( .. ) puts every element
-                                        // of $row to $cell variable
-                                foreach($row as $cell)
-                                    echo "<td>$cell</td>";
-                                echo "</tr>\n";
-                            }
-                            mysqli_free_result($result);
-                            ?>
-                        </table>
+                        <?php include 'table-user-include.php';?>
                     </div>
                 </div>
             </div>
@@ -191,36 +162,7 @@
                         <p class="category">This is your personal health data recording center, and improving your health life index is the unchanging goal of our team </p>
                     </div>
                     <div class="content table-responsive table-full-width">
-                        <table class="table table-striped">
-                            <?php
-                            $temp=$_SESSION['username'];
-                            $connect = mysqli_connect('softenggroup2.czmkb4udcq6o.us-east-2.rds.amazonaws.com', 'yuyangchen0122', 'a123123q45', 'HealthMonitoring');
-                                    // sending query
-                            $query=("SELECT DISTINCT(Date), username, Avg(HeartRate), Music FROM HeartData WHERE username='$temp' GROUP BY Date LIMIT 14");
-                            $result = mysqli_query($connect,$query);
-                            if (!$result) {
-                                die("Query to show fields from table failed");
-                            }
-                            $fields_num = mysqli_num_fields($result);
-
-                                    // printing table headers
-                            for($i=0; $i<$fields_num; $i++){
-                                $field = mysqli_fetch_field($result);
-                                echo "<td>{$field->name}</td>";
-                            }
-                            echo "</tr>\n";
-                                    // printing table rows
-                            while($row = mysqli_fetch_row($result)){
-                                echo "<tr>";
-                                        // $row is array... foreach( .. ) puts every element
-                                        // of $row to $cell variable
-                                foreach($row as $cell)
-                                    echo "<td>$cell</td>";
-                                echo "</tr>\n";
-                            }
-                            mysqli_free_result($result);
-                            ?>
-                        </table>
+                        <?php include 'table-noactivity-include.php';?>
                     </div>
                 </div>
             </div>
@@ -236,36 +178,7 @@
                         <p class="category">This is your personal health data recording center, and improving your health life index is the unchanging goal of our team </p>
                     </div>
                     <div class="content table-responsive table-full-width">
-                        <table class="table table-striped">
-                            <?php
-                            $temp=$_SESSION['username'];
-                            $connect = mysqli_connect('softenggroup2.czmkb4udcq6o.us-east-2.rds.amazonaws.com', 'yuyangchen0122', 'a123123q45', 'HealthMonitoring');
-                                    // sending query
-                            $query=("SELECT DISTINCT(Date), username, Avg(HeartRate), Music FROM HeartData WHERE username='$temp' GROUP BY Date LIMIT 14");
-                            $result = mysqli_query($connect,$query);
-                            if (!$result) {
-                                die("Query to show fields from table failed");
-                            }
-                            $fields_num = mysqli_num_fields($result);
-
-                                    // printing table headers
-                            for($i=0; $i<$fields_num; $i++){
-                                $field = mysqli_fetch_field($result);
-                                echo "<td>{$field->name}</td>";
-                            }
-                            echo "</tr>\n";
-                                    // printing table rows
-                            while($row = mysqli_fetch_row($result)){
-                                echo "<tr>";
-                                        // $row is array... foreach( .. ) puts every element
-                                        // of $row to $cell variable
-                                foreach($row as $cell)
-                                    echo "<td>$cell</td>";
-                                echo "</tr>\n";
-                            }
-                            mysqli_free_result($result);
-                            ?>
-                        </table>
+                        <?php include 'table-workout-include.php';?>
                     </div>
                 </div>
             </div>
@@ -281,36 +194,7 @@
                         <p class="category">This is your personal health data recording center, and improving your health life index is the unchanging goal of our team </p>
                     </div>
                     <div class="content table-responsive table-full-width">
-                        <table class="table table-striped">
-                            <?php
-                            $temp=$_SESSION['username'];
-                            $connect = mysqli_connect('softenggroup2.czmkb4udcq6o.us-east-2.rds.amazonaws.com', 'yuyangchen0122', 'a123123q45', 'HealthMonitoring');
-                                    // sending query
-                            $query=("SELECT DISTINCT(Date), username, Avg(HeartRate), Music FROM HeartData WHERE username='$temp' GROUP BY Date LIMIT 14");
-                            $result = mysqli_query($connect,$query);
-                            if (!$result) {
-                                die("Query to show fields from table failed");
-                            }
-                            $fields_num = mysqli_num_fields($result);
-
-                                    // printing table headers
-                            for($i=0; $i<$fields_num; $i++){
-                                $field = mysqli_fetch_field($result);
-                                echo "<td>{$field->name}</td>";
-                            }
-                            echo "</tr>\n";
-                                    // printing table rows
-                            while($row = mysqli_fetch_row($result)){
-                                echo "<tr>";
-                                        // $row is array... foreach( .. ) puts every element
-                                        // of $row to $cell variable
-                                foreach($row as $cell)
-                                    echo "<td>$cell</td>";
-                                echo "</tr>\n";
-                            }
-                            mysqli_free_result($result);
-                            ?>
-                        </table>
+                        <?php include 'table-sleeping-include.php';?>
                     </div>
                 </div>
             </div>
@@ -326,36 +210,7 @@
                         <p class="category">This is your personal health data recording center, and improving your health life index is the unchanging goal of our team </p>
                     </div>
                     <div class="content table-responsive table-full-width">
-                        <table class="table table-striped">
-                            <?php
-                            $temp=$_SESSION['username'];
-                            $connect = mysqli_connect('softenggroup2.czmkb4udcq6o.us-east-2.rds.amazonaws.com', 'yuyangchen0122', 'a123123q45', 'HealthMonitoring');
-                                    // sending query
-                            $query=("SELECT DISTINCT(Date), username, Avg(HeartRate), Music FROM HeartData WHERE username='$temp' GROUP BY Date LIMIT 14");
-                            $result = mysqli_query($connect,$query);
-                            if (!$result) {
-                                die("Query to show fields from table failed");
-                            }
-                            $fields_num = mysqli_num_fields($result);
-
-                                    // printing table headers
-                            for($i=0; $i<$fields_num; $i++){
-                                $field = mysqli_fetch_field($result);
-                                echo "<td>{$field->name}</td>";
-                            }
-                            echo "</tr>\n";
-                                    // printing table rows
-                            while($row = mysqli_fetch_row($result)){
-                                echo "<tr>";
-                                        // $row is array... foreach( .. ) puts every element
-                                        // of $row to $cell variable
-                                foreach($row as $cell)
-                                    echo "<td>$cell</td>";
-                                echo "</tr>\n";
-                            }
-                            mysqli_free_result($result);
-                            ?>
-                        </table>
+                        <?php include 'table-studying-include.php';?>
                     </div>
                 </div>
             </div>
@@ -399,7 +254,6 @@
 </body>
 
 <!--   Core JS Files   -->
-<script src="assets/js/jquery.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
 <!--  Checkbox, Radio & Switch Plugins -->
