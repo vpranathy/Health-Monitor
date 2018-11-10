@@ -23,9 +23,6 @@
     <!--  Paper Dashboard core CSS    -->
     <link href="assets/css/paper-dashboard.css" rel="stylesheet"/>
 
-    <!--  CSS for Demo Purpose, don't include it in your project     -->
-    <link href="assets/css/demo.css" rel="stylesheet" />
-
     <!--  Fonts and icons     -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
@@ -67,7 +64,7 @@
 
     <ul class="nav">
         <li>
-            <a href="dashboard.php">
+            <a href="index.php">
                 <i class="ti-panel"></i>
                 <p>Dashboard</p>
             </a>
@@ -119,62 +116,45 @@
             <a class="navbar-brand" href="#">Maps</a>
         </div>
         <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="ti-bell"></i>
+                        <p>Login/Sign Up</p>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="login.php">Log In</a></li>
+                        <li><a href="register.php">Sign Up</a></li>
+                    </ul>
+                </li>
+                    <li>
+                        <a href="index?logout='1'">
+                            <i class="ti-panel"></i>
+                            <p>Log Out</p>
+                            <?php
+                            if (isset($_GET['logout'])) {
+                             session_destroy();
+                             unset($_SESSION['username']);
+                            }
+                            ?>
+                        </a>
+                    </li>
                 <li>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="ti-panel"></i>
-                        <p>Stats</p>
+                    <a href="#">
+                        <i class="ti-settings"></i>
+                        <p>Settings</p>
                     </a>
                 </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <i class="ti-bell"></i>
-                    <p class="notification">5</p>
-                    <p>Notifications</p>
-                    <b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Notification 1</a></li>
-                    <li><a href="#">Notification 2</a></li>
-                    <li><a href="#">Notification 3</a></li>
-                    <li><a href="#">Notification 4</a></li>
-                    <li><a href="#">Another notification</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="ti-settings"></i>
-                    <p>Settings</p>
-                </a>
-            </li>
-        </ul>
+            </ul>
 
-    </div>
+        </div>
 </div>
 </nav>
-
 <div class="content">
-    <div class="container-fluid">
-        <div class="card card-map">
-          <div class="header">
-            <h4 class="title">Google Maps</h4>
-        </div>
-        <body>
-            <div id="googleMap"></div>
-            <script>
-            function myMap() {
-            var mapProp= {
-                center:new google.maps.LatLng(51.508742,-0.120850),
-                zoom:5,
-            };
-            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-            }
-            </script>
-
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAEVuPLKyD_ig8PSrzKOZ8Wbcx4Gbe3z4&callback=myMap"></script>
-        </body>
+    <div class="container">
+        <?php include "map-include.php" ?>
     </div>
-</div>
 </div>
 
 <footer class="footer">
@@ -224,24 +204,8 @@
 <!--  Notifications Plugin    -->
 <script src="assets/js/bootstrap-notify.js"></script>
 
-<!--  Google Maps Plugin    -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAEVuPLKyD_ig8PSrzKOZ8Wbcx4Gbe3z4
-&callback=initMap">
-</script>
 
 <!-- Paper Dashboard Core javascript and methods for Demo purpose -->
 <script src="assets/js/paper-dashboard.js"></script>
-
-<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
-<script src="assets/js/demo.js"></script>
-
-<script>
-    $().ready(function(){
-        demo.initGoogleMaps();
-    });
-</script>
 
 </html>

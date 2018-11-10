@@ -293,7 +293,7 @@ $jsonTable = json_encode($table3);
 
 		<ul class="nav">
 			<li>
-				<a href="dashboard.php">
+				<a href="index.php">
 					<i class="ti-panel"></i>
 					<p>Dashboard</p>
 				</a>
@@ -345,37 +345,39 @@ $jsonTable = json_encode($table3);
 				<a class="navbar-brand" href="#">Typography</a>
 			</div>
 			<div class="collapse navbar-collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<i class="ti-panel"></i>
-							<p>Stats</p>
-						</a>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<i class="ti-bell"></i>
-							<p class="notification">5</p>
-							<p>Notifications</p>
-							<b class="caret"></b>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Notification 1</a></li>
-							<li><a href="#">Notification 2</a></li>
-							<li><a href="#">Notification 3</a></li>
-							<li><a href="#">Notification 4</a></li>
-							<li><a href="#">Another notification</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">
-							<i class="ti-settings"></i>
-							<p>Settings</p>
-						</a>
-					</li>
-				</ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="ti-bell"></i>
+                        <p>Login/Sign Up</p>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="login.php">Log In</a></li>
+                        <li><a href="register.php">Sign Up</a></li>
+                    </ul>
+                </li>
+                    <li>
+                        <a href="index?logout='1'">
+                            <i class="ti-panel"></i>
+                            <p>Log Out</p>
+                            <?php
+                            if (isset($_GET['logout'])) {
+                             session_destroy();
+                             unset($_SESSION['username']);
+                            }
+                            ?>
+                        </a>
+                    </li>
+                <li>
+                    <a href="#">
+                        <i class="ti-settings"></i>
+                        <p>Settings</p>
+                    </a>
+                </li>
+            </ul>
 
-			</div>
+        </div>
 		</div>
 	</nav>
 
