@@ -1,0 +1,20 @@
+import csv
+import pandas as pd
+import random
+import numpy as np
+
+song_arr = ['Blues', 'Country Music', 'Hip Hop']
+
+
+def x(a,b):
+    return list(range(a,b))
+
+
+l = [x(50,60),x(60,80),x(90,100)]
+
+
+y = 0
+for j in song_arr:
+    for i in range(10):
+        print(j+","+ str(random.choice(l[y])))
+    y+=1
