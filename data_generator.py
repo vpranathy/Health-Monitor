@@ -1,7 +1,7 @@
 import csv
-import pandas as pd
+
 import random
-import numpy as np
+
 
 song_arr = ['Blues', 'Country Music', 'Hip Hop', 'Jazz', 'R&B', 'Pop', 'Rock', 'Folk',
             'Dance Music', 'Electronic Music', 'Opera', 'World Music']

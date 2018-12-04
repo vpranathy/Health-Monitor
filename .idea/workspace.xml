@@ -2,7 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1988b8fc-5475-4303-bcaf-2c8f2cdf0f5d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo1/1_code/HealthCareApp.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo1/1_code/HomePage.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo1/3_IntegrationTesting/HealthCareApp.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo1/3_IntegrationTesting/WebIntegration Testing.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo1/5_documentation/brochure.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo1/5_documentation/technical_documentation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HealthCareApp/app/src/main/res/raw/exercise1.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HealthCareApp/app/src/main/res/raw/portugal.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HeartData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/HeartData.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Songs/Exercise_mode/Rossini_William_Tell_Overture_Final[mp3online-converter.com].mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Songs/Exercise_mode/WagnerTheRideOfTheValkyrie.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Songs/Exercise_mode/offenbach_can_can.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Songs/Sleep_mode/Beethoven-Fur_Elise.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Songs/Sleep_mode/Chopin-nocturne-op-9-no-2.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Songs/Sleep_mode/Clair-de-lune-piano.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Songs/Sleep_mode/Portugal.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Songs/Sleep_mode/marconi-union-weightless.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Songs/Sleep_mode/moonlight_sonata.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Songs/Study_mode/Air_on_the_G_String_Suite_No_3_BWV_1068_J_S_Bach.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Songs/Study_mode/La_Stravaganza_Op_4_Concerto_No_2_in_E_Minor_RV_279_I_Allegro[mp3online-converter.com].mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SystemPage/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/SystemPage/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SystemPage/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/SystemPage/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SystemPage/maps.php" beforeDir="false" afterPath="$PROJECT_DIR$/SystemPage/maps.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SystemPage/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/SystemPage/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SystemPage/table.php" beforeDir="false" afterPath="$PROJECT_DIR$/SystemPage/table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SystemPage/typography.php" beforeDir="false" afterPath="$PROJECT_DIR$/SystemPage/typography.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SystemPage/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/SystemPage/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluetooth_android/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/numpy/core/multiarray.cpython-36m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/numpy/core/umath.cpython-36m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/numpy/random/mtrand.cpython-36m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pandas/_libs/algos.cpython-36m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pandas/_libs/interval.cpython-36m-darwin.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pandas/_libs/join.cpython-36m-darwin.so" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +51,8 @@
       <file leaf-file-name="data_generator.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="300">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -44,7 +79,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="726" />
@@ -54,7 +89,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -66,6 +100,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -122,19 +157,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="726" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="726" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3290938" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3290938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -150,6 +185,36 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/data_generator.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
           <folding>
@@ -160,8 +225,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="300">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

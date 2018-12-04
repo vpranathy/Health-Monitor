@@ -79,12 +79,6 @@
                 <p>Maps</p>
             </a>
         </li>
-        <li>
-            <a href="http://healthmonitoringhomepage-env.5ndteffiz2.us-east-2.elasticbeanstalk.com/">
-                <i class="ti-bell"></i>
-                <p>Home Page</p>
-            </a>
-        </li>
     </ul>
 </div>
 </div>
