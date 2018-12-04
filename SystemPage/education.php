@@ -1,5 +1,7 @@
 <?php 
 	
+	session_start();
+	
 	class education	{
 		private $id;
 		private $username;
@@ -37,7 +39,8 @@
 		}
 
 		public function getAllColleges() {
-			$sql = "SELECT * FROM $this->tablename";
+			$temp=$_SESSION['username'];
+			$sql = "SELECT * FROM $this->tablename WHERE username = '$temp'";
 			$stmt = $this->conn->prepare($sql);
 			$stmt->execute();
 			return $stmt->fetchAll(PDO::FETCH_ASSOC);
