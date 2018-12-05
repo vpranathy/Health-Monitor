@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title><title>Health Monitoring</title></title>
+	<title>Health Monitoring</title>
 	<meta charset="utf-8" />
 	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
@@ -33,11 +33,11 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 	<style type="text/css">
 	.container {
-		height: 500px;
+		height: 600px;
 	}
 	#map {
 		width: 85%;
-		height: 80%;
+		height: 74%;
 		border: 1px solid blue;
 	}
 	#data, #allData {
@@ -110,39 +110,39 @@
 				<a class="navbar-brand" href="#">Maps</a>
 			</div>
 			<div class="collapse navbar-collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<i class="ti-bell"></i>
-							<p>Login/Sign Up</p>
-							<b class="caret"></b>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="login.php">Log In</a></li>
-							<li><a href="register.php">Sign Up</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="index?logout='1'">
-							<i class="ti-panel"></i>
-							<p>Log Out</p>
-							<?php
-							if (isset($_GET['logout'])) {
-								session_destroy();
-								unset($_SESSION['username']);
-							}
-							?>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="ti-settings"></i>
-							<p>Settings</p>
-						</a>
-					</li>
-				</ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="ti-bell"></i>
+                        <p>Login/Sign Up</p>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="login.php">Log In</a></li>
+                        <li><a href="register.php">Sign Up</a></li>
+                    </ul>
+                </li>
+                    <li>
+                        <a href="index?logout='1'">
+                            <i class="ti-panel"></i>
+                            <p>Log Out</p>
+                            <?php
+                            if (isset($_GET['logout'])) {
+                             session_destroy();
+                             unset($_SESSION['username']);
+                            }
+                            ?>
+                        </a>
+                    </li>
+                <li>
+                    <a href="#">
+                        <i class="ti-settings"></i>
+                        <p>Settings</p>
+                    </a>
+                </li>
+            </ul>
 
-			</div>
+        </div>
 		</div>
 	</nav>
 	<div class="container">
@@ -195,5 +195,23 @@
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCckUpe7AIg-flGozXgeD8KFUFD7gfVEmc&callback=loadMap">
 </script>
+<!--   Core JS Files   -->
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
+<!--  Checkbox, Radio & Switch Plugins -->
+<script src="assets/js/bootstrap-checkbox-radio.js"></script>
+
+<!--  Charts Plugin -->
+<script src="assets/js/chartist.min.js"></script>
+
+<!--  Notifications Plugin    -->
+<script src="assets/js/bootstrap-notify.js"></script>
+
+
+<!-- Paper Dashboard Core javascript and methods for Demo purpose -->
+<script src="assets/js/paper-dashboard.js"></script>
+
+<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+<script src="assets/js/demo.js"></script>
 </html>

@@ -74,7 +74,7 @@
             </a>
         </li>
         <li>
-            <a href="maps.html">
+            <a href="maps.php">
                 <i class="ti-map"></i>
                 <p>Maps</p>
             </a>
