@@ -14,11 +14,13 @@ public class homeScreen extends AppCompatActivity {
     private Button buttonC;
     private Button button5;
     TextView textView4 ;
-
+    String Username;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
+        Intent intent = getIntent();
+        Username= intent.getStringExtra("username");
         textView4 = findViewById(R.id.textView4);
         buttonC = (Button) findViewById(R.id.buttonC);
         button5= findViewById(R.id.button5);
@@ -50,6 +52,7 @@ public class homeScreen extends AppCompatActivity {
 
     public void openexerciseScreen(){
         Intent intent2 = new Intent(this, exercisescreen.class);
+        intent2.putExtra("username",Username);
         startActivity(intent2);
     }
 

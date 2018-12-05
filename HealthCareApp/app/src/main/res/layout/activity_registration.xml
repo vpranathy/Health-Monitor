@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/password"
         android:layout_below="@id/username"
-        android:hint="enter the password"/>
+        android:hint="Enter the password"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -63,6 +63,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@id/height"
+        android:layout_marginBottom="5dp"
         android:id="@+id/radioButtons"
         android:layout_centerHorizontal="true">
 
@@ -88,13 +89,67 @@
 
     </LinearLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/choice"
+        android:textColor="#000"
+        android:text="Select the Music Genre for workout Sessions"
+        android:layout_below="@id/radioButtons"/>
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:id="@+id/music_choice">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="100"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Dance"
+            android:text="Dance"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hip-hop"
+            android:text="hip-hop"
+            android:layout_toRightOf="@id/Dance"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/heavy-metal"
+            android:text="Heavy-Metal"
+            android:textSize="11sp"
+            android:layout_toRightOf="@id/hip-hop"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sportAnthem"
+            android:text="Sport Anthem"
+            android:textSize="11sp"
+            android:layout_toRightOf="@id/heavy-metal"/>
+    </RelativeLayout>
+
+
+    </LinearLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"
         android:id="@+id/RegisterButton"
-        android:layout_below="@id/radioButtons"
+        android:layout_below="@id/music_choice"
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"/>
 </RelativeLayout>

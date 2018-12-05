@@ -2,6 +2,7 @@ package com.example.malayshah.healthcareapp;
 
 import android.app.DownloadManager;
 import android.content.DialogInterface;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,9 +25,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RegistrationActivity extends AppCompatActivity {
-    Button register;
+    Button register, dance, hipHop, heavyMetal, sportAnthem;
     EditText Name, email, username, password;
-    String enteredName, enteredemail, enteredUsername, enteredPassword;
+    String enteredName, enteredemail, enteredUsername, enteredPassword,MusicPreference;
     AlertDialog.Builder builder;
     String reg_url = "http://healthmonitoringsystem.us-east-2.elasticbeanstalk.com/mobile_register.php";
 
@@ -34,18 +35,47 @@ public class RegistrationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
+        dance = findViewById(R.id.Dance);
+        hipHop= findViewById(R.id.hip_hop);
+        heavyMetal= findViewById(R.id.heavy_metal);
+        sportAnthem= findViewById(R.id.sportAnthem);
         register = findViewById(R.id.RegisterButton);
         Name = findViewById(R.id.RegName);
         email=findViewById(R.id.email);
         username = findViewById(R.id.username);
         password=findViewById(R.id.password);
+        dance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MusicPreference = "Dance";
+            }
+        });
+        hipHop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MusicPreference="HipHop";
+            }
+        });
+        heavyMetal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MusicPreference="HeavyMetal";
+            }
+        });
+        sportAnthem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MusicPreference="SportAnthem";
+            }
+        });
         builder= new AlertDialog.Builder(RegistrationActivity.this);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 enteredName= Name.getText().toString();
-                enteredemail=email.getText().toString();
                 enteredUsername=username.getText().toString();
+                enteredemail=email.getText().toString();
+
                 enteredPassword= password.getText().toString();
                 if (enteredName.matches("")||enteredUsername.matches("")||enteredPassword.matches("")||enteredemail.matches("")){
                     builder.setTitle("Something went wrong");
@@ -82,10 +112,14 @@ public class RegistrationActivity extends AppCompatActivity {
                             params.put("email",enteredemail);
                             params.put("user_name",enteredUsername);
                             params.put("password",enteredPassword);
+                            params.put("MusicPreference",MusicPreference);
                             return params;
                         }
                     };
-
+                    SQLiteDatabase mydata = openOrCreateDatabase("User",MODE_PRIVATE,null);
+                    mydata.execSQL("Create table if not exists MusicPref (username Varchar, Music Varchar)");
+                    mydata.execSQL("insert into MusicPref(username,Music) " +
+                            "Values('"+enteredUsername+"','"+MusicPreference+"')");
                     MySingleton.getmInstance(RegistrationActivity.this).addToRequestQueue(stringRequest);
                 }
             }

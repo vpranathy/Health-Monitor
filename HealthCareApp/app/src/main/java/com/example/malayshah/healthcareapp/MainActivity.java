@@ -119,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void openhomeScreen(){
         Intent intent = new Intent(this, homeScreen.class);
+        intent.putExtra("username",Username);
         startActivity(intent);
     }
 }

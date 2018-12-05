@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="50"
+        android:layout_height="50dp"
+        android:id="@+id/history_activity"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:layout_height="50dp"
+        android:id="@+id/average_history"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="30"
+        android:layout_height="50dp"
+        android:id="@+id/outcome_history"
+        />
+</LinearLayout>

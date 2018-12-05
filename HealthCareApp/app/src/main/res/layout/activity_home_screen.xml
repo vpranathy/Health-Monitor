@@ -51,4 +51,11 @@
         android:layout_marginBottom="261dp"
         android:text="SETTINGS" />
 
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
 </RelativeLayout>

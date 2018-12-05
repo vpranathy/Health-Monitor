@@ -1,9 +1,18 @@
 package com.example.malayshah.healthcareapp;
 
+import android.Manifest;
+import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothSocket;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.media.MediaPlayer;
 import android.os.Handler;
 import android.os.Looper;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -21,6 +30,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -30,6 +41,7 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.UUID;
 
 public class exercisescreen extends AppCompatActivity {
     private static final String TAG = "exercisescreen";
@@ -39,16 +51,23 @@ public class exercisescreen extends AppCompatActivity {
     private Button pause;
     private Button play;
     private Button stop;
-    public Boolean runner ;
+    public Boolean runner;
     ArrayList<String> workout = new ArrayList<>();
     ArrayList<String> sleep = new ArrayList<>();
     ArrayList<String> study = new ArrayList<>();
-    String randData ;
-    MediaPlayer player,player2;
-    TextView liveData , textView7, textView8;
+    String randData, username;
+    MediaPlayer player, player2;
+    TextView liveData, textView7, textView8;
     String upload_url = "http://healthmonitoringsystem.us-east-2.elasticbeanstalk.com/mobile_heartrate.php";
-    int mode ;
+    int mode;
     int random;
+    Double lat, lon;
+    private final String DEVICE_ADDRESS="98:D3:81:F5:B4:00";
+    private final UUID PORT_UUID = UUID.fromString("00001101-0000-1000-8000-00805f9b34fb");//Serial Port Service ID
+    private BluetoothDevice device;
+    private BluetoothSocket socket;
+    private OutputStream outputStream;
+    private InputStream inputStream;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,24 +78,22 @@ public class exercisescreen extends AppCompatActivity {
 //        workout.add("workout3");
 //        workout.add("workout4");
 //        workout.add("workout5");
-//
-//
+
 //        sleep.add("sleep1");
 //        sleep.add("sleep2");
 //        sleep.add("sleep3");
 //        sleep.add("sleep4");
 //        sleep.add("sleep5");
-//
-//
+
 //        study.add("study1");
 //        study.add("study2");
 //        study.add("study3");
 //        study.add("study4");
 //        study.add("study5");
 
-
-
-        play=findViewById(R.id.Play);
+        Intent intent= getIntent();
+        username=intent.getStringExtra("username");
+        play = findViewById(R.id.Play);
         pause = findViewById(R.id.Pause);
         stop = findViewById(R.id.Stop);
         stop.setVisibility(View.INVISIBLE);
@@ -84,13 +101,49 @@ public class exercisescreen extends AppCompatActivity {
         exercise = findViewById(R.id.button1);
         textView7 = findViewById(R.id.textView7);
         textView8 = findViewById(R.id.textView8);
-        player=MediaPlayer.create(this,R.raw.exercise1);
-        player2=MediaPlayer.create(this,R.raw.portugal);
+        player = MediaPlayer.create(this,R.raw.portugal);
+        player2 = MediaPlayer.create(this, R.raw.portugal);
         pause.setVisibility(View.INVISIBLE);
+        LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+
+        LocationListener locationListener = new LocationListener() {
+            @Override
+            public void onLocationChanged(Location location) {
+                lat = location.getLatitude();
+                lon = location.getLongitude();
+            }
+
+            @Override
+            public void onStatusChanged(String provider, int status, Bundle extras) {
+
+            }
+
+            @Override
+            public void onProviderEnabled(String provider) {
+
+            }
+
+            @Override
+            public void onProviderDisabled(String provider) {
+
+            }
+        };
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        locationManager.requestLocationUpdates(locationManager.NETWORK_PROVIDER, 0, 0, locationListener);
 
         exercise.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //send an some data to start receiving
                 stop.setVisibility(View.VISIBLE);
                 mode= 1;
                 runner = true;
@@ -138,6 +191,8 @@ public class exercisescreen extends AppCompatActivity {
                                             params.put("date",formattedDate);
                                             params.put("time",formattedTime);
                                             params.put("music","RossiniWilliam");
+                                            params.put("latitude",lat.toString());
+                                            params.put("longitude",lon.toString());
                                             return params;
                                         }
                                     };
@@ -214,6 +269,8 @@ public class exercisescreen extends AppCompatActivity {
                                             params.put("date",formattedDate);
                                             params.put("time",formattedTime);
                                             params.put("music","Portugal (A Lift)");
+                                            params.put("latitude",lat.toString());
+                                            params.put("longitude",lon.toString());
                                             return params;
                                         }
                                     };
