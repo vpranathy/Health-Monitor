@@ -300,11 +300,11 @@ public class exercisescreen extends AppCompatActivity {
                                         @Override
                                         protected Map<String, String> getParams() throws AuthFailureError {
                                             Map<String,String> params = new HashMap<String, String>();
-                                            params.put("username","Aniket194");
+                                            params.put("username","test0");
                                             params.put("heartrate",randData);
                                             params.put("date",formattedDate);
                                             params.put("time",formattedTime);
-                                            params.put("music","Portugal (A Lift)");
+                                            params.put("music","Dance");
                                             params.put("latitude",lat.toString());
                                             params.put("longitude",lon.toString());
                                             return params;
