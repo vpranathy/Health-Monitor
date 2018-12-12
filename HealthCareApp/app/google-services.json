@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "767058518253",
+    "firebase_url": "https://healthcareapp-eb82e.firebaseio.com",
+    "project_id": "healthcareapp-eb82e",
+    "storage_bucket": "healthcareapp-eb82e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767058518253:android:408be8637729c6f3",
+        "android_client_info": {
+          "package_name": "com.example.malayshah.healthcareapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767058518253-vjnl90ous2u8cligbgg9rjd2fj4tap4o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.malayshah.healthcareapp",
+            "certificate_hash": "a7f4162f6386644a187ab7ce9044302ef17c548f"
+          }
+        },
+        {
+          "client_id": "767058518253-9tossvhkv6ghoe8dudqs12lgkp62uhnd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ785iU_cgyzCtQykGGktxbJEgXJbdyuE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767058518253-9tossvhkv6ghoe8dudqs12lgkp62uhnd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

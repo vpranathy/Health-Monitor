@@ -22,6 +22,15 @@
         tools:text="Start" />
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inf0"
+        android:text="Information"
+        android:layout_below="@id/buttonC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,24 +41,33 @@
         android:text="Information about previous sessions below:"
         android:textStyle="bold|italic" />
 
-    <Button
-        android:id="@+id/buttonD"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="145dp"
-        android:text="CONNECT TO DEVICE"
-        android:textSize="20sp" />
+        android:id="@+id/infoButton"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_below="@id/inf0"
+        android:layout_marginTop="10dp">
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="261dp"
-        android:text="SETTINGS" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+            android:text="Exercise Info"
+            android:id="@+id/exerciseInfo"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+            android:id="@+id/sleepInfo"
+            android:text="Sleep Info"
+            android:onClick="openSleepInfo"
+            />
+    </LinearLayout>
+
 
     <ListView
         android:layout_width="match_parent"

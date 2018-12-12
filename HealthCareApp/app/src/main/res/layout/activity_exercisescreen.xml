@@ -7,7 +7,13 @@
     android:background="@drawable/gradient"
     tools:context=".exercisescreen"
     >
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/connect"
+        android:text="connect"
+        android:layout_centerHorizontal="true"
+        />
     <LinearLayout
         android:id="@+id/innerLayout"
         android:layout_width="match_parent"
@@ -22,7 +28,7 @@
         <Button
             android:id="@+id/button1"
             android:layout_width="0dp"
-            android:layout_weight="33.33"
+            android:layout_weight="50"
             android:layout_height="100dp"
             android:drawableTop="@drawable/ic_action_gym"
             android:padding="15dp"
@@ -31,19 +37,12 @@
         <Button
             android:id="@+id/button2"
             android:layout_width="0dp"
-            android:layout_weight="33.33"            android:layout_height="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="50"
             android:drawableTop="@drawable/ic_action_study"
             android:padding="15dp"
             android:text="@string/sleep" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="0dp"
-            android:layout_weight="33.33"
-            android:layout_height="100dp"
-            android:drawableTop="@drawable/ic_action_sleep"
-            android:padding="15dp"
-            android:text="@string/study" />
     </LinearLayout>
 
     <TextView
@@ -54,19 +53,22 @@
         android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="38dp"
+        android:background="#000"
         android:fontFamily="casual"
         android:text="Live Heartrate is : "
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
         android:textStyle="italic" />
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:id="@+id/liveData"
+        android:background="#000"
         android:fontFamily="casual"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/textView6"
         android:textColor="@color/colorPrimary"
+        android:textAlignment="viewStart"
         android:textSize="20sp"
         android:textStyle="italic"
         android:text=" 65"
@@ -121,11 +123,38 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView7"
         android:layout_centerHorizontal="true"
+
         android:layout_marginTop="-140dp"
         android:text="@string/heart_rate"
         android:textSize="28sp" />
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/music_buttons"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:id="@+id/music_choice"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+            android:id="@+id/playNext"
+            android:text="Next Track"
+            android:visibility="invisible"
+            android:onClick="next"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+            android:id="@+id/playPrevious"
+            android:visibility="invisible"
+            android:text=" Previous Track"
+            android:onClick="previous"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/music_buttons"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
