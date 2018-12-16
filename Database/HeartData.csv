@@ -1,0 +1,572 @@
+id,username,HeartRate,Date,Time,type,lat,lng,address,activity
+1,yuyangchen0122,75,2018-10-05,3:24:48,disco,40.5235,-74.4372,"Rutgers Livingston Student Center",NoActivity
+2,yuyangchen,81,2018-10-18,5:56:31,hiphop,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+3,yuyangchen0122,81,2018-11-13,0:34:37,country,40.4847,-74.4366,"Rutgers Douglass Student Center",NoActivity
+4,yuyangchen0122,79,2018-11-01,10:08:06,country,40.5197,-74.461,"Rutgers Sonny Werblin Recreation Center",NoActivity
+5,yuyangchen0122,83,2018-10-26,19:34:31,blues,40.5197,-74.461,"Rutgers Sonny Werblin Recreation Center",NoActivity
+6,yuyangchen0122,85,2018-12-03,14:55:05,rock,40.5235,-74.4372,"Rutgers Livingston Student Center",NoActivity
+7,yuyangchen0122,83,2018-11-18,4:24:14,country,40.5235,-74.4372,"Rutgers Livingston Student Center",NoActivity
+8,yuyangchen0122,83,2018-12-10,21:31:30,jazz,40.5235,-74.4372,"Rutgers Livingston Student Center",NoActivity
+9,yuyangchen0122,78,2018-10-17,3:12:31,pop,40.5235,-74.4372,"Rutgers Livingston Student Center",NoActivity
+10,yuyangchen0122,84,2018-11-04,22:46:42,jazz,40.5235,-74.4372,"Rutgers Livingston Student Center",NoActivity
+11,yuyangchen0122,84,2018-10-31,12:10:40,classic,40.5235,-74.4372,"Rutgers Livingston Student Center",NoActivity
+12,yuyangchen0122,82,2018-10-24,10:17:56,raggae,40.5235,-74.4372,"Rutgers Livingston Student Center",NoActivity
+13,yuyangchen0122,80,2018-12-05,16:14:15,raggae,40.5235,-74.4372,"Rutgers Livingston Student Center",NoActivity
+14,yuyangchen0122,76,2018-11-04,15:33:04,pop,40.5235,-74.4372,"Rutgers Livingston Student Center",NoActivity
+15,yuyangchen0122,75,2018-11-10,3:04:29,jazz,40.5235,-74.4372,"Rutgers Livingston Student Center",NoActivity
+16,yuyangchen0122,76,2018-10-27,5:58:06,jazz,40.5235,-74.4372,"Rutgers Livingston Student Center",NoActivity
+17,yuyangchen0122,77,2018-10-26,11:34:51,pop,40.5235,-74.4372,"Rutgers Livingston Student Center",NoActivity
+18,yuyangchen0122,84,2018-11-29,20:10:39,rock,40.5235,-74.4372,"Rutgers Livingston Student Center",NoActivity
+19,yuyangchen0122,75,2018-12-04,23:56:52,raggae,40.5235,-74.4372,"Rutgers Livingston Student Center",NoActivity
+20,yuyangchen0122,81,2018-11-16,16:33:48,hiphop,40.5235,-74.4372,"Rutgers Livingston Student Center",NoActivity
+21,yuyangchen0122,77,2018-10-05,3:12:04,metal,40.5235,-74.4372,"Rutgers Livingston Student Center",NoActivity
+22,yuyangchen0122,85,2018-10-26,7:14:29,metal,40.5235,-74.4372,"Rutgers Livingston Student Center",NoActivity
+23,yuyangchen0122,80,2018-10-13,15:00:16,hiphop,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+24,yuyangchen0122,83,2018-11-21,8:01:21,classic,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+25,yuyangchen0122,77,2018-10-17,17:27:30,pop,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+26,yuyangchen0122,77,2018-10-17,3:46:12,classic,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+27,yuyangchen0122,79,2018-11-05,3:27:01,hiphop,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+28,yuyangchen0122,81,2018-10-01,23:04:28,pop,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+29,yuyangchen0122,78,2018-12-09,17:39:17,pop,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+30,yuyangchen0122,75,2018-10-20,8:36:45,jazz,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+31,yuyangchen0122,77,2018-10-03,3:06:03,rock,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+32,yuyangchen0122,85,2018-11-24,1:59:26,metal,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+33,yuyangchen0122,85,2018-11-04,20:22:34,country,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+34,yuyangchen0122,78,2018-11-04,19:48:39,pop,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+35,yuyangchen0122,78,2018-10-24,8:58:48,rock,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+36,yuyangchen0122,75,2018-10-24,11:46:19,raggae,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+37,yuyangchen0122,85,2018-10-17,17:31:50,rock,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+38,yuyangchen0122,82,2018-11-29,11:42:39,metal,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+39,yuyangchen0122,80,2018-11-14,2:05:02,pop,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+40,yuyangchen0122,84,2018-10-06,0:30:29,disco,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+41,yuyangchen0122,83,2018-11-01,13:21:18,blues,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+42,yuyangchen0122,82,2018-10-31,14:22:48,rock,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+43,yuyangchen0122,82,2018-10-04,21:26:58,pop,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+44,yuyangchen0122,81,2018-10-04,23:41:16,disco,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+45,yuyangchen0122,77,2018-11-30,5:48:16,rock,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+46,yuyangchen0122,79,2018-12-06,23:53:46,hiphop,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+47,yuyangchen0122,76,2018-10-11,6:21:08,hiphop,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+48,yuyangchen0122,75,2018-11-12,20:52:02,classic,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+49,yuyangchen0122,83,2018-10-28,16:30:09,pop,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+50,yuyangchen0122,75,2018-10-13,14:52:09,blues,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+51,yuyangchen0122,77,2018-10-10,15:31:58,disco,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+52,yuyangchen0122,78,2018-11-07,12:13:09,rock,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+53,yuyangchen0122,82,2018-10-06,8:00:13,metal,40.5027,-74.4522,"Rutgers College Avenue Student Center",NoActivity
+54,yuyangchen0122,76,2018-11-13,13:17:49,pop,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+55,yuyangchen0122,85,2018-11-27,0:47:08,raggae,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+56,yuyangchen0122,81,2018-11-19,18:18:43,jazz,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+57,yuyangchen0122,84,2018-10-20,17:29:05,disco,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+58,yuyangchen0122,75,2018-11-27,20:53:20,pop,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+59,yuyangchen0122,80,2018-10-06,3:48:35,metal,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+60,yuyangchen0122,82,2018-11-30,5:24:09,jazz,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+61,yuyangchen0122,75,2018-12-03,10:07:19,rock,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+62,yuyangchen0122,82,2018-10-27,5:03:52,disco,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+63,yuyangchen0122,82,2018-11-22,4:01:38,rock,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+64,yuyangchen0122,83,2018-11-09,10:57:22,country,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+65,yuyangchen0122,75,2018-11-23,0:04:43,metal,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+66,yuyangchen0122,81,2018-11-02,19:40:19,country,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+67,yuyangchen0122,82,2018-11-15,6:45:59,jazz,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+68,yuyangchen0122,76,2018-11-22,9:29:22,metal,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+69,yuyangchen0122,84,2018-11-05,23:52:57,pop,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+70,yuyangchen0122,83,2018-11-04,1:46:42,country,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+71,yuyangchen0122,79,2018-11-26,11:27:24,hiphop,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+72,yuyangchen0122,80,2018-10-06,5:03:44,country,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+73,yuyangchen0122,83,2018-10-02,22:06:19,hiphop,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+74,yuyangchen0122,82,2018-11-24,16:30:42,raggae,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+75,yuyangchen0122,76,2018-12-10,23:38:00,country,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+76,yuyangchen0122,76,2018-11-02,13:40:45,jazz,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+77,yuyangchen0122,75,2018-12-08,20:54:11,blues,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+78,yuyangchen0122,79,2018-10-04,17:30:06,raggae,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+79,yuyangchen0122,84,2018-10-05,2:06:58,raggae,40.52874,-74.45627,"Rutgers Richard Weeks Hall Of Engineering",NoActivity
+80,yuyangchen0122,85,2018-11-16,4:02:02,rock,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+81,yuyangchen0122,84,2018-12-10,20:10:53,raggae,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+82,yuyangchen0122,75,2018-10-07,0:59:57,classic,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+83,yuyangchen0122,84,2018-10-13,23:39:42,disco,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+84,yuyangchen0122,77,2018-11-27,3:17:10,jazz,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+85,yuyangchen0122,82,2018-10-29,16:28:58,rock,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+86,yuyangchen0122,85,2018-11-03,0:10:48,metal,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+87,yuyangchen0122,78,2018-10-23,3:14:08,blues,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+88,yuyangchen0122,78,2018-12-01,19:47:40,rock,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+89,yuyangchen0122,76,2018-10-09,8:23:04,blues,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+90,yuyangchen0122,77,2018-12-06,10:51:44,jazz,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+91,yuyangchen0122,83,2018-11-11,16:45:44,pop,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+92,yuyangchen0122,79,2018-11-16,7:00:05,classic,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+93,yuyangchen0122,76,2018-12-10,6:28:02,raggae,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+94,yuyangchen0122,78,2018-11-10,5:48:04,hiphop,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+95,yuyangchen0122,79,2018-11-11,14:49:13,country,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+96,yuyangchen0122,82,2018-11-07,1:21:50,classic,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+97,yuyangchen0122,81,2018-10-21,17:17:15,jazz,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+98,yuyangchen0122,82,2018-12-01,17:09:30,blues,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+99,yuyangchen0122,83,2018-12-10,20:39:43,hiphop,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+100,yuyangchen0122,75,2018-11-30,16:12:50,rock,40.52386,-74.46456,"Rutgers Allison Road Classroom",NoActivity
+101,yuyangchen0122,75,2018-11-11,10:30:37,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+102,yuyangchen0122,70,2018-10-26,6:18:55,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+103,yuyangchen0122,71,2018-11-28,8:00:12,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+104,yuyangchen0122,72,2018-12-08,8:37:35,blues,40.53036,-74.41325,"Rivendell Village",Sleeping
+105,yuyangchen0122,75,2018-10-27,19:31:42,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+106,yuyangchen0122,73,2018-10-29,18:28:34,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+107,yuyangchen0122,72,2018-11-17,8:48:56,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+108,yuyangchen0122,72,2018-12-08,17:38:23,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+109,yuyangchen0122,73,2018-11-28,0:22:10,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+110,yuyangchen0122,74,2018-11-09,1:36:31,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+111,yuyangchen0122,74,2018-11-27,2:05:52,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+112,yuyangchen0122,74,2018-11-28,15:20:48,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+113,yuyangchen0122,73,2018-11-03,21:25:28,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+114,yuyangchen0122,75,2018-10-05,19:08:08,blues,40.53036,-74.41325,"Rivendell Village",Sleeping
+115,yuyangchen0122,73,2018-10-01,12:50:33,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+116,yuyangchen0122,72,2018-12-04,8:51:28,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+117,yuyangchen0122,74,2018-10-22,22:26:04,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+118,yuyangchen0122,74,2018-10-13,23:40:15,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+119,yuyangchen0122,70,2018-10-28,22:50:04,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+120,yuyangchen0122,73,2018-11-15,18:11:43,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+121,yuyangchen0122,70,2018-12-08,20:21:53,blues,40.53036,-74.41325,"Rivendell Village",Sleeping
+122,yuyangchen0122,70,2018-11-25,0:32:55,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+123,yuyangchen0122,70,2018-12-05,0:42:25,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+124,yuyangchen0122,74,2018-11-13,13:52:57,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+125,yuyangchen0122,75,2018-12-04,16:57:02,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+126,yuyangchen0122,71,2018-11-17,0:47:11,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+127,yuyangchen0122,71,2018-10-03,15:40:31,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+128,yuyangchen0122,74,2018-12-08,15:01:05,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+129,yuyangchen0122,75,2018-12-04,16:14:19,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+130,yuyangchen0122,75,2018-10-05,17:27:45,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+131,yuyangchen0122,72,2018-11-29,17:38:49,blues,40.53036,-74.41325,"Rivendell Village",Sleeping
+132,yuyangchen0122,70,2018-12-10,18:42:07,blues,40.53036,-74.41325,"Rivendell Village",Sleeping
+133,yuyangchen0122,75,2018-11-08,5:18:52,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+134,yuyangchen0122,70,2018-11-08,19:48:52,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+135,yuyangchen0122,72,2018-11-03,5:18:10,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+136,yuyangchen0122,71,2018-10-16,22:46:32,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+137,yuyangchen0122,74,2018-10-30,9:44:26,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+138,yuyangchen0122,72,2018-10-02,17:15:22,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+139,yuyangchen0122,73,2018-10-06,7:31:21,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+140,yuyangchen0122,72,2018-12-03,8:01:33,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+141,yuyangchen0122,74,2018-10-25,2:00:50,blues,40.53036,-74.41325,"Rivendell Village",Sleeping
+142,yuyangchen0122,71,2018-10-30,6:14:13,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+143,yuyangchen0122,71,2018-12-03,1:50:17,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+144,yuyangchen0122,75,2018-11-06,10:53:40,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+145,yuyangchen0122,70,2018-12-03,7:11:23,blues,40.53036,-74.41325,"Rivendell Village",Sleeping
+146,yuyangchen0122,70,2018-11-01,17:58:30,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+147,yuyangchen0122,70,2018-12-02,7:42:28,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+148,yuyangchen0122,71,2018-12-08,16:00:46,blues,40.53036,-74.41325,"Rivendell Village",Sleeping
+149,yuyangchen0122,70,2018-11-06,10:39:06,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+150,yuyangchen0122,70,2018-10-10,2:40:59,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+151,yuyangchen0122,74,2018-10-12,11:29:04,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+152,yuyangchen0122,74,2018-11-26,15:53:29,blues,40.53036,-74.41325,"Rivendell Village",Sleeping
+153,yuyangchen0122,70,2018-11-20,7:02:34,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+154,yuyangchen0122,72,2018-11-27,16:20:33,blues,40.53036,-74.41325,"Rivendell Village",Sleeping
+155,yuyangchen0122,73,2018-10-09,4:13:31,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+156,yuyangchen0122,72,2018-11-26,5:51:55,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+157,yuyangchen0122,73,2018-10-23,9:36:55,blues,40.53036,-74.41325,"Rivendell Village",Sleeping
+158,yuyangchen0122,73,2018-11-07,12:03:14,blues,40.53036,-74.41325,"Rivendell Village",Sleeping
+159,yuyangchen0122,75,2018-10-27,9:12:19,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+160,yuyangchen0122,74,2018-10-19,19:13:16,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+161,yuyangchen0122,72,2018-11-22,20:03:37,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+162,yuyangchen0122,75,2018-11-14,2:52:57,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+163,yuyangchen0122,71,2018-11-12,14:27:42,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+164,yuyangchen0122,74,2018-10-29,5:05:33,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+165,yuyangchen0122,74,2018-10-22,2:46:57,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+166,yuyangchen0122,74,2018-10-28,14:47:37,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+167,yuyangchen0122,75,2018-12-04,1:06:01,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+168,yuyangchen0122,75,2018-11-23,21:57:42,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+169,yuyangchen0122,72,2018-10-10,18:53:17,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+170,yuyangchen0122,75,2018-10-17,14:46:02,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+171,yuyangchen0122,71,2018-11-28,1:35:27,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+172,yuyangchen0122,74,2018-10-14,10:57:28,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+173,yuyangchen0122,73,2018-11-14,9:52:59,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+174,yuyangchen0122,74,2018-12-08,22:39:27,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+175,yuyangchen0122,73,2018-11-05,23:02:41,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+176,yuyangchen0122,71,2018-11-15,15:12:17,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+177,yuyangchen0122,74,2018-10-22,9:42:57,blues,40.53036,-74.41325,"Rivendell Village",Sleeping
+178,yuyangchen0122,72,2018-10-13,23:07:58,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+179,yuyangchen0122,72,2018-10-24,23:53:19,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+180,yuyangchen0122,75,2018-11-29,9:31:53,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+181,yuyangchen0122,75,2018-12-07,2:22:10,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+182,yuyangchen0122,70,2018-12-09,3:38:43,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+183,yuyangchen0122,73,2018-10-30,9:49:31,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+184,yuyangchen0122,75,2018-11-15,13:19:29,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+185,yuyangchen0122,70,2018-10-09,0:37:08,blues,40.53036,-74.41325,"Rivendell Village",Sleeping
+186,yuyangchen0122,71,2018-10-08,8:57:59,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+187,yuyangchen0122,75,2018-10-19,19:56:11,blues,40.53036,-74.41325,"Rivendell Village",Sleeping
+188,yuyangchen0122,73,2018-11-20,2:08:40,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+189,yuyangchen0122,73,2018-10-31,0:15:55,blues,40.53036,-74.41325,"Rivendell Village",Sleeping
+190,yuyangchen0122,74,2018-11-20,16:00:39,blues,40.53036,-74.41325,"Rivendell Village",Sleeping
+191,yuyangchen0122,70,2018-11-07,23:22:22,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+192,yuyangchen0122,70,2018-10-30,4:33:09,jazz,40.53036,-74.41325,"Rivendell Village",Sleeping
+193,yuyangchen0122,71,2018-10-02,15:35:15,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+194,yuyangchen0122,71,2018-10-29,21:40:11,blues,40.53036,-74.41325,"Rivendell Village",Sleeping
+195,yuyangchen0122,72,2018-10-05,15:54:13,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+196,yuyangchen0122,75,2018-10-27,0:18:49,blues,40.53036,-74.41325,"Rivendell Village",Sleeping
+197,yuyangchen0122,74,2018-12-10,2:23:00,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+198,yuyangchen0122,73,2018-10-23,13:38:03,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+199,yuyangchen0122,74,2018-11-15,23:37:13,country,40.53036,-74.41325,"Rivendell Village",Sleeping
+200,yuyangchen0122,71,2018-11-21,4:35:50,classic,40.53036,-74.41325,"Rivendell Village",Sleeping
+201,yuyangchen0122,90,2018-10-19,5:20:15,hiphop,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+202,yuyangchen0122,91,2018-11-02,8:28:40,disco,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+203,yuyangchen0122,95,2018-12-03,21:14:57,classic,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+204,yuyangchen0122,85,2018-10-28,2:09:24,metal,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+205,yuyangchen0122,93,2018-11-10,12:01:53,jazz,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+206,yuyangchen0122,82,2018-10-27,18:46:35,blues,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+207,yuyangchen0122,94,2018-11-01,11:25:35,blues,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+208,yuyangchen0122,82,2018-10-09,21:46:59,classic,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+209,yuyangchen0122,80,2018-10-09,18:22:29,hiphop,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+210,yuyangchen0122,84,2018-11-15,12:14:27,hiphop,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+211,yuyangchen0122,83,2018-10-05,17:04:25,metal,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+212,yuyangchen0122,91,2018-12-09,4:08:42,blues,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+213,yuyangchen0122,90,2018-12-03,7:05:09,country,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+214,yuyangchen0122,86,2018-10-23,9:21:16,classic,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+215,yuyangchen0122,92,2018-12-08,22:41:30,metal,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+216,yuyangchen0122,86,2018-11-30,18:50:44,hiphop,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+217,yuyangchen0122,84,2018-12-06,16:30:42,blues,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+218,yuyangchen0122,86,2018-11-07,19:00:31,disco,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+219,yuyangchen0122,84,2018-10-14,13:49:50,hiphop,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+220,yuyangchen0122,89,2018-10-19,15:11:07,pop,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+221,yuyangchen0122,87,2018-11-14,17:13:29,jazz,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+222,yuyangchen0122,95,2018-11-14,17:51:29,raggae,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+223,yuyangchen0122,82,2018-12-08,21:37:52,blues,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+224,yuyangchen0122,81,2018-12-03,6:48:56,blues,40.523421,-74.431437,"Rutgers Livingston Plaza Computer Lab",Studying
+225,yuyangchen0122,92,2018-12-09,17:46:45,country,40.5225,-74.4374,"James Dickson Carr Library",Studying
+226,yuyangchen0122,90,2018-10-29,23:34:06,classic,40.5225,-74.4374,"James Dickson Carr Library",Studying
+227,yuyangchen0122,85,2018-10-05,4:15:02,pop,40.5225,-74.4374,"James Dickson Carr Library",Studying
+228,yuyangchen0122,85,2018-12-09,7:10:53,rock,40.5225,-74.4374,"James Dickson Carr Library",Studying
+229,yuyangchen0122,95,2018-11-16,22:55:15,jazz,40.5225,-74.4374,"James Dickson Carr Library",Studying
+230,yuyangchen0122,85,2018-11-02,0:50:30,classic,40.5225,-74.4374,"James Dickson Carr Library",Studying
+231,yuyangchen0122,90,2018-10-16,19:16:38,hiphop,40.5225,-74.4374,"James Dickson Carr Library",Studying
+232,yuyangchen0122,93,2018-11-22,14:40:05,hiphop,40.5225,-74.4374,"James Dickson Carr Library",Studying
+233,yuyangchen0122,83,2018-10-26,23:35:20,blues,40.5225,-74.4374,"James Dickson Carr Library",Studying
+234,yuyangchen0122,89,2018-10-01,5:15:30,raggae,40.5225,-74.4374,"James Dickson Carr Library",Studying
+235,yuyangchen0122,94,2018-11-18,12:41:00,pop,40.5225,-74.4374,"James Dickson Carr Library",Studying
+236,yuyangchen0122,86,2018-12-06,10:39:17,pop,40.5225,-74.4374,"James Dickson Carr Library",Studying
+237,yuyangchen0122,90,2018-10-01,3:11:11,hiphop,40.5225,-74.4374,"James Dickson Carr Library",Studying
+238,yuyangchen0122,84,2018-10-11,5:43:45,country,40.5225,-74.4374,"James Dickson Carr Library",Studying
+239,yuyangchen0122,83,2018-10-17,18:17:05,jazz,40.5225,-74.4374,"James Dickson Carr Library",Studying
+240,yuyangchen0122,84,2018-12-04,2:31:18,pop,40.5225,-74.4374,"James Dickson Carr Library",Studying
+241,yuyangchen0122,83,2018-11-15,9:52:22,classic,40.5225,-74.4374,"James Dickson Carr Library",Studying
+242,yuyangchen0122,90,2018-10-15,5:54:52,classic,40.5225,-74.4374,"James Dickson Carr Library",Studying
+243,yuyangchen0122,83,2018-11-26,5:52:17,jazz,40.5225,-74.4374,"James Dickson Carr Library",Studying
+244,yuyangchen0122,89,2018-10-29,7:36:28,raggae,40.5225,-74.4374,"James Dickson Carr Library",Studying
+245,yuyangchen0122,83,2018-10-04,9:50:57,disco,40.5225,-74.4374,"James Dickson Carr Library",Studying
+246,yuyangchen0122,87,2018-11-23,23:03:04,blues,40.5225,-74.4374,"James Dickson Carr Library",Studying
+247,yuyangchen0122,80,2018-11-24,4:39:39,hiphop,40.5225,-74.4374,"James Dickson Carr Library",Studying
+248,yuyangchen0122,94,2018-12-09,23:02:35,hiphop,40.5225,-74.4374,"James Dickson Carr Library",Studying
+249,yuyangchen0122,88,2018-12-06,2:20:13,metal,40.5225,-74.4374,"James Dickson Carr Library",Studying
+250,yuyangchen0122,83,2018-11-11,9:43:45,hiphop,40.5225,-74.4374,"James Dickson Carr Library",Studying
+251,yuyangchen0122,86,2018-11-29,17:02:37,disco,40.5225,-74.4374,"James Dickson Carr Library",Studying
+252,yuyangchen0122,86,2018-12-03,18:01:32,country,40.5225,-74.4374,"James Dickson Carr Library",Studying
+253,yuyangchen0122,92,2018-11-29,9:19:27,disco,40.5225,-74.4374,"James Dickson Carr Library",Studying
+254,yuyangchen0122,89,2018-11-30,7:45:13,disco,40.5225,-74.4374,"James Dickson Carr Library",Studying
+255,yuyangchen0122,93,2018-11-26,9:41:23,jazz,40.5225,-74.4374,"James Dickson Carr Library",Studying
+256,yuyangchen0122,83,2018-10-29,7:38:07,hiphop,40.5225,-74.4374,"James Dickson Carr Library",Studying
+257,yuyangchen0122,95,2018-12-09,4:13:13,disco,40.5225,-74.4374,"James Dickson Carr Library",Studying
+258,yuyangchen0122,89,2018-10-10,12:07:48,country,40.5225,-74.4374,"James Dickson Carr Library",Studying
+259,yuyangchen0122,88,2018-12-07,15:21:24,classic,40.5225,-74.4374,"James Dickson Carr Library",Studying
+260,yuyangchen0122,92,2018-10-04,11:39:14,hiphop,40.5225,-74.4374,"James Dickson Carr Library",Studying
+261,yuyangchen0122,93,2018-11-24,0:52:10,classic,40.5225,-74.4374,"James Dickson Carr Library",Studying
+262,yuyangchen0122,90,2018-12-08,19:51:31,metal,40.5248,-74.4672,"Library of Science and Medicine",Studying
+263,yuyangchen0122,89,2018-11-11,14:23:46,blues,40.5248,-74.4672,"Library of Science and Medicine",Studying
+264,yuyangchen0122,80,2018-11-11,23:18:59,raggae,40.5248,-74.4672,"Library of Science and Medicine",Studying
+265,yuyangchen0122,80,2018-11-27,2:47:33,pop,40.5248,-74.4672,"Library of Science and Medicine",Studying
+266,yuyangchen0122,88,2018-10-17,2:14:13,metal,40.5248,-74.4672,"Library of Science and Medicine",Studying
+267,yuyangchen0122,91,2018-11-05,12:12:25,disco,40.5248,-74.4672,"Library of Science and Medicine",Studying
+268,yuyangchen0122,83,2018-11-27,13:35:16,rock,40.5248,-74.4672,"Library of Science and Medicine",Studying
+269,yuyangchen0122,94,2018-11-13,10:39:53,raggae,40.5248,-74.4672,"Library of Science and Medicine",Studying
+270,yuyangchen0122,87,2018-11-12,16:54:19,raggae,40.5248,-74.4672,"Library of Science and Medicine",Studying
+271,yuyangchen0122,87,2018-11-01,4:42:54,rock,40.5248,-74.4672,"Library of Science and Medicine",Studying
+272,yuyangchen0122,86,2018-10-01,23:23:32,hiphop,40.5248,-74.4672,"Library of Science and Medicine",Studying
+273,yuyangchen0122,80,2018-10-27,23:16:28,country,40.5248,-74.4672,"Library of Science and Medicine",Studying
+274,yuyangchen0122,95,2018-10-27,9:57:45,raggae,40.5248,-74.4672,"Library of Science and Medicine",Studying
+275,yuyangchen0122,81,2018-12-06,16:54:35,disco,40.5248,-74.4672,"Library of Science and Medicine",Studying
+276,yuyangchen0122,92,2018-10-02,12:06:58,jazz,40.5248,-74.4672,"Library of Science and Medicine",Studying
+277,yuyangchen0122,81,2018-10-22,3:31:07,blues,40.5248,-74.4672,"Library of Science and Medicine",Studying
+278,yuyangchen0122,93,2018-10-25,7:23:54,classic,40.5248,-74.4672,"Library of Science and Medicine",Studying
+279,yuyangchen0122,90,2018-12-04,13:47:12,metal,40.5248,-74.4672,"Library of Science and Medicine",Studying
+280,yuyangchen0122,85,2018-10-04,10:57:12,disco,40.5248,-74.4672,"Library of Science and Medicine",Studying
+281,yuyangchen0122,87,2018-11-02,2:20:24,rock,40.5248,-74.4672,"Library of Science and Medicine",Studying
+282,yuyangchen0122,81,2018-11-25,13:57:32,raggae,40.5248,-74.4672,"Library of Science and Medicine",Studying
+283,yuyangchen0122,94,2018-10-19,17:54:18,rock,40.5248,-74.4672,"Library of Science and Medicine",Studying
+284,yuyangchen0122,83,2018-12-10,12:23:06,classic,40.5248,-74.4672,"Library of Science and Medicine",Studying
+285,yuyangchen0122,89,2018-11-05,7:39:33,classic,40.5248,-74.4672,"Library of Science and Medicine",Studying
+286,yuyangchen0122,92,2018-11-03,9:42:02,pop,40.5248,-74.4672,"Library of Science and Medicine",Studying
+287,yuyangchen0122,80,2018-11-12,8:24:09,hiphop,40.5248,-74.4672,"Library of Science and Medicine",Studying
+288,yuyangchen0122,85,2018-10-11,10:52:27,jazz,40.5248,-74.4672,"Library of Science and Medicine",Studying
+289,yuyangchen0122,93,2018-10-16,6:12:56,country,40.5248,-74.4672,"Library of Science and Medicine",Studying
+290,yuyangchen0122,93,2018-10-30,1:59:04,jazz,40.5248,-74.4672,"Library of Science and Medicine",Studying
+291,yuyangchen0122,86,2018-11-16,2:40:47,rock,40.5248,-74.4672,"Library of Science and Medicine",Studying
+292,yuyangchen0122,86,2018-10-30,13:50:24,hiphop,40.5248,-74.4672,"Library of Science and Medicine",Studying
+293,yuyangchen0122,82,2018-11-03,22:13:31,disco,40.5248,-74.4672,"Library of Science and Medicine",Studying
+294,yuyangchen0122,84,2018-11-27,8:40:50,classic,40.5248,-74.4672,"Library of Science and Medicine",Studying
+295,yuyangchen0122,82,2018-10-18,12:13:52,pop,40.5248,-74.4672,"Library of Science and Medicine",Studying
+296,yuyangchen0122,88,2018-10-28,2:38:48,disco,40.5248,-74.4672,"Library of Science and Medicine",Studying
+297,yuyangchen0122,95,2018-12-10,23:17:39,country,40.5248,-74.4672,"Library of Science and Medicine",Studying
+298,yuyangchen0122,89,2018-11-19,21:30:24,jazz,40.5248,-74.4672,"Library of Science and Medicine",Studying
+299,yuyangchen0122,83,2018-12-06,2:55:03,metal,40.5248,-74.4672,"Library of Science and Medicine",Studying
+300,yuyangchen0122,95,2018-10-06,16:01:21,raggae,40.5248,-74.4672,"Library of Science and Medicine",Studying
+301,yuyangchen0122,82,2018-11-03,21:57:10,metal,40.5248,-74.4672,"Library of Science and Medicine",Studying
+302,yuyangchen0122,111,2018-11-03,18:21:38,blues,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+303,yuyangchen0122,129,2018-11-02,10:59:18,disco,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+304,yuyangchen0122,123,2018-11-07,15:26:23,disco,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+305,yuyangchen0122,116,2018-11-23,14:26:10,blues,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+306,yuyangchen0122,118,2018-12-01,1:00:25,jazz,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+307,yuyangchen0122,120,2018-11-13,10:00:33,hiphop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+308,yuyangchen0122,115,2018-10-23,5:58:58,rock,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+309,yuyangchen0122,122,2018-12-07,14:21:44,metal,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+310,yuyangchen0122,126,2018-11-20,21:04:37,pop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+311,yuyangchen0122,119,2018-12-08,5:37:37,country,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+312,yuyangchen0122,111,2018-10-24,22:54:15,country,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+313,yuyangchen0122,110,2018-10-11,2:57:24,jazz,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+314,yuyangchen0122,124,2018-11-14,10:39:04,hiphop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+315,yuyangchen0122,123,2018-11-22,22:42:06,jazz,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+316,yuyangchen0122,129,2018-10-01,7:38:00,rock,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+317,yuyangchen0122,123,2018-12-02,7:12:46,metal,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+318,yuyangchen0122,120,2018-11-17,0:16:51,raggae,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+319,yuyangchen0122,122,2018-11-09,22:18:01,pop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+320,yuyangchen0122,129,2018-11-21,21:23:16,classic,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+321,yuyangchen0122,127,2018-11-21,14:41:27,country,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+322,yuyangchen0122,120,2018-10-08,6:55:55,jazz,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+323,yuyangchen0122,122,2018-10-29,18:39:13,blues,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+324,yuyangchen0122,115,2018-11-26,17:25:10,pop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+325,yuyangchen0122,111,2018-12-05,2:05:22,rock,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+326,yuyangchen0122,124,2018-12-09,22:00:11,raggae,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+327,yuyangchen0122,118,2018-11-27,0:59:25,country,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+328,yuyangchen0122,119,2018-10-08,10:23:25,rock,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+329,yuyangchen0122,118,2018-10-10,8:48:33,country,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+330,yuyangchen0122,122,2018-10-14,9:03:38,metal,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+331,yuyangchen0122,122,2018-11-28,5:22:59,blues,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+332,yuyangchen0122,128,2018-11-30,12:58:14,country,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+333,yuyangchen0122,117,2018-10-24,17:37:47,metal,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+334,yuyangchen0122,125,2018-10-09,13:34:25,blues,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+335,yuyangchen0122,120,2018-11-23,23:42:35,classic,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+336,yuyangchen0122,112,2018-11-15,7:56:37,raggae,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+337,yuyangchen0122,128,2018-11-27,6:56:38,blues,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+338,yuyangchen0122,129,2018-11-15,21:56:06,classic,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+339,yuyangchen0122,121,2018-11-28,17:59:19,blues,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+340,yuyangchen0122,113,2018-10-23,20:13:52,disco,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+341,yuyangchen0122,130,2018-11-21,19:52:39,country,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+342,yuyangchen0122,118,2018-11-17,14:29:58,disco,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+343,yuyangchen0122,110,2018-11-16,1:42:03,country,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+344,yuyangchen0122,115,2018-10-17,0:04:41,blues,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+345,yuyangchen0122,126,2018-11-07,2:43:49,rock,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+346,yuyangchen0122,128,2018-10-19,19:16:11,pop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+347,yuyangchen0122,113,2018-12-10,18:47:15,blues,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+348,yuyangchen0122,111,2018-10-18,11:23:34,hiphop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+349,yuyangchen0122,124,2018-11-12,19:48:49,jazz,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+350,yuyangchen0122,120,2018-10-30,21:19:43,country,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+351,yuyangchen0122,120,2018-10-26,3:56:19,classic,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+352,yuyangchen0122,126,2018-11-28,10:49:16,country,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+353,yuyangchen0122,114,2018-10-20,12:24:57,country,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+354,yuyangchen0122,118,2018-10-22,10:32:32,hiphop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+355,yuyangchen0122,115,2018-10-22,12:34:07,metal,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+356,yuyangchen0122,128,2018-10-12,6:19:26,classic,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+357,yuyangchen0122,121,2018-10-07,10:12:15,classic,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+358,yuyangchen0122,111,2018-10-02,14:48:31,jazz,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+359,yuyangchen0122,118,2018-11-11,22:50:53,classic,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+360,yuyangchen0122,110,2018-10-05,15:02:21,hiphop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+361,yuyangchen0122,118,2018-10-09,7:25:28,metal,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+362,yuyangchen0122,112,2018-10-16,14:32:10,pop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+363,yuyangchen0122,125,2018-11-21,1:46:32,pop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+364,yuyangchen0122,111,2018-12-10,19:31:51,hiphop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+365,yuyangchen0122,110,2018-11-09,23:06:31,raggae,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+366,yuyangchen0122,112,2018-11-23,3:48:01,disco,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+367,yuyangchen0122,121,2018-11-09,5:17:11,jazz,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+368,yuyangchen0122,115,2018-11-28,14:32:44,country,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+369,yuyangchen0122,125,2018-10-11,8:01:00,jazz,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+370,yuyangchen0122,122,2018-11-06,1:49:43,metal,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+371,yuyangchen0122,113,2018-10-27,14:09:55,country,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+372,yuyangchen0122,110,2018-10-16,6:09:33,jazz,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+373,yuyangchen0122,129,2018-11-21,7:54:11,jazz,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+374,yuyangchen0122,123,2018-10-21,18:47:54,raggae,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+375,yuyangchen0122,112,2018-10-17,3:51:38,rock,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+376,yuyangchen0122,126,2018-11-29,17:08:55,raggae,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+377,yuyangchen0122,124,2018-11-12,7:20:12,jazz,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+378,yuyangchen0122,110,2018-10-18,0:05:50,blues,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+379,yuyangchen0122,117,2018-10-15,18:18:52,metal,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+380,yuyangchen0122,127,2018-10-01,19:51:40,country,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+381,yuyangchen0122,127,2018-10-14,10:24:06,rock,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+382,yuyangchen0122,126,2018-10-15,8:01:06,hiphop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+383,yuyangchen0122,113,2018-10-05,4:12:50,pop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+384,yuyangchen0122,130,2018-10-05,12:50:40,pop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+385,yuyangchen0122,122,2018-10-22,5:31:26,pop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+386,yuyangchen0122,129,2018-11-15,22:09:38,pop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+387,yuyangchen0122,121,2018-10-12,11:17:33,metal,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+388,yuyangchen0122,127,2018-10-20,17:07:58,disco,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+389,yuyangchen0122,129,2018-11-04,20:34:38,hiphop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+390,yuyangchen0122,111,2018-12-10,7:02:27,hiphop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+391,yuyangchen0122,129,2018-10-09,8:02:44,disco,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+392,yuyangchen0122,110,2018-10-06,19:31:58,jazz,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+393,yuyangchen0122,111,2018-10-02,16:21:39,metal,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+394,yuyangchen0122,127,2018-12-09,11:37:40,blues,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+395,yuyangchen0122,113,2018-10-29,0:08:59,pop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+396,yuyangchen0122,123,2018-11-26,7:32:14,disco,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+397,yuyangchen0122,130,2018-10-28,1:31:18,disco,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+398,yuyangchen0122,127,2018-10-02,13:23:43,disco,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+399,yuyangchen0122,124,2018-10-19,9:03:39,raggae,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+400,yuyangchen0122,110,2018-10-30,2:01:22,hiphop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+401,yuyangchen0122,123,2018-10-28,20:45:34,country,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+402,yuyangchen0122,129,2018-11-06,14:46:57,blues,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+403,yuyangchen0122,125,2018-10-07,12:49:40,metal,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+404,yuyangchen0122,115,2018-11-07,7:12:45,disco,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+405,yuyangchen0122,113,2018-11-09,20:52:50,jazz,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+406,yuyangchen0122,119,2018-10-10,14:56:14,blues,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+407,yuyangchen0122,113,2018-12-08,6:05:20,pop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+408,yuyangchen0122,121,2018-11-20,5:11:31,disco,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+409,yuyangchen0122,127,2018-10-02,3:40:59,disco,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+410,yuyangchen0122,122,2018-10-22,13:48:21,hiphop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+411,yuyangchen0122,129,2018-10-15,17:27:19,pop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+412,yuyangchen0122,117,2018-12-03,2:10:25,hiphop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+413,yuyangchen0122,116,2018-10-09,21:37:58,jazz,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+414,yuyangchen0122,119,2018-10-02,23:01:25,pop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+415,yuyangchen0122,125,2018-12-02,5:50:40,country,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+416,yuyangchen0122,118,2018-11-22,18:33:12,raggae,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+417,yuyangchen0122,129,2018-12-02,9:35:24,metal,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+418,yuyangchen0122,130,2018-11-22,23:14:59,rock,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+419,yuyangchen0122,111,2018-10-04,11:56:45,jazz,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+420,yuyangchen0122,114,2018-11-29,21:07:52,disco,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+421,yuyangchen0122,113,2018-10-07,22:05:40,jazz,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+422,yuyangchen0122,123,2018-11-07,13:06:32,pop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+423,yuyangchen0122,121,2018-11-22,14:16:48,raggae,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+424,yuyangchen0122,114,2018-11-10,20:20:01,hiphop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+425,yuyangchen0122,126,2018-11-05,3:29:09,hiphop,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+426,yuyangchen0122,130,2018-10-10,4:31:56,blues,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+427,yuyangchen0122,122,2018-11-28,19:59:12,jazz,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+428,yuyangchen0122,125,2018-12-04,18:00:55,jazz,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+429,yuyangchen0122,115,2018-11-29,12:35:51,rock,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+430,yuyangchen0122,118,2018-10-02,18:33:02,rock,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+431,yuyangchen0122,126,2018-11-12,12:03:56,rock,40.53524,-74.49143,"Planet Fitness Piscataway",Workout
+432,yuyangchen0122,112,2018-12-09,20:29:05,hiphop,40.5032,-74.4527,"College Avenue Gym",Workout
+433,yuyangchen0122,117,2018-12-04,0:28:19,country,40.5032,-74.4527,"College Avenue Gym",Workout
+434,yuyangchen0122,120,2018-11-19,4:27:57,blues,40.5032,-74.4527,"College Avenue Gym",Workout
+435,yuyangchen0122,115,2018-10-30,19:57:40,hiphop,40.5032,-74.4527,"College Avenue Gym",Workout
+436,yuyangchen0122,115,2018-10-05,18:01:35,jazz,40.5032,-74.4527,"College Avenue Gym",Workout
+437,yuyangchen0122,117,2018-10-14,21:04:27,blues,40.5032,-74.4527,"College Avenue Gym",Workout
+438,yuyangchen0122,120,2018-10-27,2:36:53,jazz,40.5032,-74.4527,"College Avenue Gym",Workout
+439,yuyangchen0122,127,2018-11-18,21:33:06,hiphop,40.5032,-74.4527,"College Avenue Gym",Workout
+440,yuyangchen0122,129,2018-12-05,3:16:54,raggae,40.5032,-74.4527,"College Avenue Gym",Workout
+441,yuyangchen0122,122,2018-10-13,5:27:05,country,40.5032,-74.4527,"College Avenue Gym",Workout
+442,yuyangchen0122,116,2018-11-30,4:15:20,hiphop,40.5032,-74.4527,"College Avenue Gym",Workout
+443,yuyangchen0122,130,2018-11-10,8:02:21,metal,40.5032,-74.4527,"College Avenue Gym",Workout
+444,yuyangchen0122,115,2018-10-08,0:04:06,classic,40.5032,-74.4527,"College Avenue Gym",Workout
+445,yuyangchen0122,116,2018-11-08,20:28:53,raggae,40.5032,-74.4527,"College Avenue Gym",Workout
+446,yuyangchen0122,123,2018-11-06,15:55:50,jazz,40.5032,-74.4527,"College Avenue Gym",Workout
+447,yuyangchen0122,129,2018-12-05,20:57:03,jazz,40.5032,-74.4527,"College Avenue Gym",Workout
+448,yuyangchen0122,124,2018-12-01,6:57:49,rock,40.5032,-74.4527,"College Avenue Gym",Workout
+449,yuyangchen0122,123,2018-12-03,21:52:25,country,40.5032,-74.4527,"College Avenue Gym",Workout
+450,yuyangchen0122,119,2018-10-06,2:19:54,rock,40.5032,-74.4527,"College Avenue Gym",Workout
+451,yuyangchen0122,116,2018-11-04,6:35:20,rock,40.5032,-74.4527,"College Avenue Gym",Workout
+452,yuyangchen0122,120,2018-10-03,18:21:39,rock,40.5032,-74.4527,"College Avenue Gym",Workout
+453,yuyangchen0122,119,2018-11-26,12:01:05,blues,40.5032,-74.4527,"College Avenue Gym",Workout
+454,yuyangchen0122,120,2018-11-01,18:36:00,metal,40.5032,-74.4527,"College Avenue Gym",Workout
+455,yuyangchen0122,117,2018-10-16,12:46:46,classic,40.5032,-74.4527,"College Avenue Gym",Workout
+456,yuyangchen0122,113,2018-12-01,22:07:13,jazz,40.5032,-74.4527,"College Avenue Gym",Workout
+457,yuyangchen0122,116,2018-11-30,20:15:11,rock,40.5032,-74.4527,"College Avenue Gym",Workout
+458,yuyangchen0122,112,2018-12-05,7:26:57,jazz,40.5032,-74.4527,"College Avenue Gym",Workout
+459,yuyangchen0122,115,2018-11-22,13:37:18,blues,40.5032,-74.4527,"College Avenue Gym",Workout
+460,yuyangchen0122,126,2018-10-30,23:22:38,disco,40.5032,-74.4527,"College Avenue Gym",Workout
+461,yuyangchen0122,113,2018-11-26,7:44:46,classic,40.5032,-74.4527,"College Avenue Gym",Workout
+462,yuyangchen0122,126,2018-10-22,0:34:06,pop,40.5032,-74.4527,"College Avenue Gym",Workout
+463,yuyangchen0122,125,2018-11-27,13:02:41,hiphop,40.5032,-74.4527,"College Avenue Gym",Workout
+464,yuyangchen0122,115,2018-12-05,22:19:52,classic,40.5032,-74.4527,"College Avenue Gym",Workout
+465,yuyangchen0122,118,2018-10-21,10:20:19,blues,40.5032,-74.4527,"College Avenue Gym",Workout
+466,yuyangchen0122,123,2018-10-05,7:21:49,disco,40.5032,-74.4527,"College Avenue Gym",Workout
+467,yuyangchen0122,117,2018-10-29,21:41:42,hiphop,40.5032,-74.4527,"College Avenue Gym",Workout
+468,yuyangchen0122,118,2018-11-26,2:16:41,metal,40.5032,-74.4527,"College Avenue Gym",Workout
+469,yuyangchen0122,125,2018-10-14,5:51:16,country,40.5032,-74.4527,"College Avenue Gym",Workout
+470,yuyangchen0122,130,2018-10-12,7:51:35,blues,40.5032,-74.4527,"College Avenue Gym",Workout
+471,yuyangchen0122,123,2018-10-31,1:45:36,country,40.5032,-74.4527,"College Avenue Gym",Workout
+472,yuyangchen0122,117,2018-10-23,10:59:30,raggae,40.5032,-74.4527,"College Avenue Gym",Workout
+473,yuyangchen0122,110,2018-11-11,1:29:59,country,40.5032,-74.4527,"College Avenue Gym",Workout
+474,yuyangchen0122,110,2018-10-06,19:11:58,rock,40.5032,-74.4527,"College Avenue Gym",Workout
+475,yuyangchen0122,110,2018-10-26,23:52:04,metal,40.5032,-74.4527,"College Avenue Gym",Workout
+476,yuyangchen0122,118,2018-10-23,3:12:54,blues,40.5032,-74.4527,"College Avenue Gym",Workout
+477,yuyangchen0122,117,2018-11-29,5:56:56,rock,40.5032,-74.4527,"College Avenue Gym",Workout
+478,yuyangchen0122,119,2018-10-29,3:48:56,hiphop,40.5032,-74.4527,"College Avenue Gym",Workout
+479,yuyangchen0122,116,2018-11-15,13:24:16,jazz,40.5032,-74.4527,"College Avenue Gym",Workout
+480,yuyangchen0122,115,2018-10-19,0:55:52,metal,40.5032,-74.4527,"College Avenue Gym",Workout
+481,yuyangchen0122,116,2018-10-19,4:32:29,metal,40.5032,-74.4527,"College Avenue Gym",Workout
+482,yuyangchen0122,119,2018-12-03,16:51:40,jazz,40.5032,-74.4527,"College Avenue Gym",Workout
+483,yuyangchen0122,129,2018-11-04,9:02:55,disco,40.5032,-74.4527,"College Avenue Gym",Workout
+484,yuyangchen0122,129,2018-10-27,22:10:00,blues,40.5032,-74.4527,"College Avenue Gym",Workout
+485,yuyangchen0122,121,2018-11-15,23:15:29,rock,40.5032,-74.4527,"College Avenue Gym",Workout
+486,yuyangchen0122,117,2018-10-29,4:50:13,jazz,40.5197,74.461,"Sonny Werblin Recreation Center",Workout
+487,yuyangchen0122,129,2018-10-21,3:50:03,hiphop,40.5197,74.461,"Sonny Werblin Recreation Center",Workout
+488,yuyangchen0122,121,2018-11-05,23:13:14,disco,40.5197,74.461,"Sonny Werblin Recreation Center",Workout
+489,yuyangchen0122,125,2018-10-26,17:28:42,pop,40.5197,74.461,"Sonny Werblin Recreation Center",Workout
+490,yuyangchen0122,122,2018-10-27,16:37:08,rock,40.5197,74.461,"Sonny Werblin Recreation Center",Workout
+491,yuyangchen0122,118,2018-10-19,20:03:00,classic,40.5197,74.461,"Sonny Werblin Recreation Center",Workout
+492,yuyangchen0122,126,2018-11-27,23:40:23,pop,40.5197,74.461,"Sonny Werblin Recreation Center",Workout
+493,yuyangchen0122,125,2018-10-22,7:45:05,jazz,40.5197,74.461,"Sonny Werblin Recreation Center",Workout
+494,yuyangchen0122,125,2018-12-07,8:45:23,jazz,40.5197,74.461,"Sonny Werblin Recreation Center",Workout
+495,yuyangchen0122,117,2018-11-02,4:57:55,hiphop,40.5197,74.461,"Sonny Werblin Recreation Center",Workout
+496,yuyangchen0122,125,2018-11-02,11:13:43,country,40.5197,74.461,"Sonny Werblin Recreation Center",Workout
+497,yuyangchen0122,125,2018-12-08,4:38:17,rock,40.5197,74.461,"Sonny Werblin Recreation Center",Workout
+498,yuyangchen0122,118,2018-10-27,16:11:25,hiphop,40.5197,74.461,"Sonny Werblin Recreation Center",Workout
+499,yuyangchen0122,121,2018-11-28,7:24:08,hiphop,40.5197,74.461,"Sonny Werblin Recreation Center",Workout
+500,yuyangchen0122,111,2018-10-20,22:45:09,rock,40.5197,74.461,"Sonny Werblin Recreation Center",Workout
+501,test0,72,2018-12-06,16:20:23,None,40.528646,-74.414361,Rivendell,NoActivity
+502,test0,74,2018-12-06,16:22:02,None,40.528646,-74.414361,Rivendell,NoActivity
+503,test0,72,2018-12-06,16:24:12,None,40.528646,-74.414361,Rivendell,NoActivity
+504,test0,67,2018-12-06,16:26:08,None,40.528646,-74.414361,Rivendell,NoActivity
+505,test0,91,2018-12-06,16:28:03,None,40.528646,-74.414361,Rivendell,Workout
+506,test0,127,2018-12-06,16:30:03,None,40.528646,-74.414361,Rivendell,Workout
+507,test0,121,2018-12-06,16:32:05,None,40.528646,-74.414361,Rivendell,Workout
+508,test0,132,2018-12-06,16:34:08,None,40.528646,-74.414361,Rivendell,Workout
+509,test0,144,2018-12-06,16:36:03,None,40.528646,-74.414361,Rivendell,Workout
+510,test0,146,2018-12-06,16:38:06,None,40.528646,-74.414361,Rivendell,Workout
+511,test0,151,2018-12-06,16:40:04,None,40.528646,-74.414361,Rivendell,Workout
+512,test0,141,2018-12-06,16:42:03,None,40.528646,-74.414361,Rivendell,Workout
+513,test0,155,2018-12-06,16:44:04,None,40.528646,-74.414361,Rivendell,Workout
+514,test0,146,2018-12-06,16:46:05,None,40.528646,-74.414361,Rivendell,Workout
+515,test0,127,2018-12-06,16:48:05,None,40.528646,-74.414361,Rivendell,Workout
+516,test0,133,2018-12-06,16:50:04,None,40.528646,-74.414361,Rivendell,Workout
+517,test0,97,2018-12-06,16:52:06,None,40.528646,-74.414361,Rivendell,NoActivity
+518,test0,81,2018-12-06,16:54:05,None,40.528646,-74.414361,Rivendell,NoActivity
+519,test0,72,2018-12-06,16:56:05,None,40.528646,-74.414361,Rivendell,NoActivity
+520,test0,68,2018-12-06,16:58:04,None,40.528646,-74.414361,Rivendell,NoActivity
+521,test0,71,2018-12-06,17:00:06,None,40.528646,-74.414361,Rivendell,NoActivity
+522,test0,74,2018-12-06,17:10:34,None,40.528646,-74.414361,Rivendell,NoActivity
+523,test0,69,2018-12-06,17:12:40,None,40.528646,-74.414361,Rivendell,NoActivity
+524,test0,72,2018-12-06,17:14:40,None,40.528646,-74.414361,Rivendell,NoActivity
+525,test0,74,2018-12-06,17:16:42,None,40.528646,-74.414361,Rivendell,NoActivity
+526,test0,112,2018-12-06,17:18:40,rock,40.528646,-74.414361,Rivendell,Workout
+527,test0,135,2018-12-06,17:20:40,rock,40.528646,-74.414361,Rivendell,Workout
+528,test0,141,2018-12-06,17:22:41,rock,40.528646,-74.414361,Rivendell,Workout
+529,test0,142,2018-12-06,17:24:42,rock,40.528646,-74.414361,Rivendell,Workout
+530,test0,146,2018-12-06,17:26:42,rock,40.528646,-74.414361,Rivendell,Workout
+531,test0,155,2018-12-06,17:28:41,rock,40.528646,-74.414361,Rivendell,Workout
+532,test0,148,2018-12-06,17:30:42,rock,40.528646,-74.414361,Rivendell,Workout
+533,test0,157,2018-12-06,17:32:40,rock,40.528646,-74.414361,Rivendell,Workout
+534,test0,151,2018-12-06,17:34:41,rock,40.528646,-74.414361,Rivendell,Workout
+535,test0,156,2018-12-06,17:36:40,rock,40.528646,-74.414361,Rivendell,Workout
+536,test0,144,2018-12-06,17:38:40,rock,40.528646,-74.414361,Rivendell,Workout
+537,test0,146,2018-12-06,17:40:40,rock,40.528646,-74.414361,Rivendell,Workout
+538,test0,88,2018-12-06,17:42:41,blue,40.528646,-74.414361,Rivendell,NoActivity
+539,test0,73,2018-12-06,17:44:42,blue,40.528646,-74.414361,Rivendell,NoActivity
+540,test0,69,2018-12-06,17:46:41,blue,40.528646,-74.414361,Rivendell,NoActivity
+541,test0,74,2018-12-06,17:48:40,blue,40.528646,-74.414361,Rivendell,NoActivity
+542,test0,72,2018-12-06,17:50:42,blue,40.528646,-74.414361,Rivendell,NoActivity
+1084,test0,73,12-12-2018,01:30:03,dance,40.5213,-74.461144,NULL,NULL
+1085,test0,68,12-12-2018,01:30:13,dance,40.5213,-74.461144,NULL,NULL
+1086,test0,70,12-12-2018,01:30:23,dance,40.5213,-74.461144,NULL,NULL
+1087,test0,73,12-12-2018,01:30:33,dance,40.5213,-74.461144,NULL,NULL
+1088,test0,75,12-12-2018,01:30:43,dance,40.5213,-74.461144,NULL,NULL
+1089,test0,71,12-12-2018,01:30:53,dance,40.5213,-74.461144,NULL,NULL
+1090,test0,74,12-12-2018,01:31:03,dance,40.5213,-74.461144,NULL,NULL
+1091,test0,75,12-12-2018,01:31:13,dance,40.5213,-74.461144,NULL,NULL
+1092,test0,69,12-12-2018,01:31:23,dance,40.5213,-74.461144,NULL,NULL
+1093,test0,75,12-12-2018,01:31:33,dance,40.5213,-74.461144,NULL,NULL
+1094,test0,73,12-12-2018,01:31:43,dance,40.5213,-74.461144,NULL,NULL
+1095,test0,67,12-12-2018,01:31:53,dance,40.5213,-74.461144,NULL,NULL
+1096,test0,72,12-12-2018,01:32:13,dance,40.5213,-74.461144,NULL,NULL
+1097,test0,72,12-12-2018,01:32:13,dance,40.5213,-74.461144,NULL,NULL
+1098,test0,67,12-12-2018,01:32:34,dance,40.5213,-74.461144,NULL,NULL
+1099,test0,67,12-12-2018,01:32:34,dance,40.5213,-74.461144,NULL,NULL
+1100,test0,67,12-12-2018,01:33:06,dance,40.5213,-74.461144,NULL,NULL
+1101,test0,70,12-12-2018,01:33:06,dance,40.5213,-74.461144,NULL,NULL
+1102,test0,70,12-12-2018,01:33:06,dance,40.5213,-74.461144,NULL,NULL
+1103,test0,73,12-12-2018,01:33:20,dance,40.5213,-74.461144,NULL,NULL
+1104,test0,73,12-12-2018,01:33:23,dance,40.5213,-74.461144,NULL,NULL
+1105,test0,67,12-12-2018,01:33:39,dance,40.5213,-74.461144,NULL,NULL
+1106,test0,71,12-12-2018,01:33:43,dance,40.5213,-74.461144,NULL,NULL
+1107,test0,73,12-12-2018,01:34:13,dance,40.5213,-74.461144,NULL,NULL
+1108,test0,67,12-12-2018,01:34:13,dance,40.5213,-74.461144,NULL,NULL
+1109,test0,67,12-12-2018,01:34:13,dance,40.5213,-74.461144,NULL,NULL
+1110,test0,67,12-12-2018,01:34:23,dance,40.5213,-74.461144,NULL,NULL
+1111,test0,73,12-12-2018,01:34:40,dance,40.5213,-74.461144,NULL,NULL
+1112,test0,67,12-12-2018,01:34:43,dance,40.5213,-74.461144,NULL,NULL
